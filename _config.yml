@@ -87,11 +87,12 @@ analytics:
 # Site Author
 author:
   name             : "Nguyen Minh Anh"
-  avatar           : "images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : 
+  images           : "images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Analyst Portfolio"
   location         : "Hanoi"
   email            : 
-  uri              : "https://muwnawn.github.io/data_portfolio/home/"
+  uri              : 
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
