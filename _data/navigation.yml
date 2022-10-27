@@ -7,8 +7,8 @@ main:
 
 # side bar
 docs:
-  - title: Tools
-   children:
+  - title: "Tools"
+#    children:
     - title: "Excel"
       url: /docs/excel/
     - title: "SQL"
@@ -19,8 +19,8 @@ docs:
       url: /docs/powerbi/
     - title: "Others"
       url: /docs/others/
-  - title: Categories
-  children:
+  - title: "Categories"
+#   children:
     - title: "Preparation and Analysis"
     url: /docs/categories-analysis/
     - title: "Visualisation"
