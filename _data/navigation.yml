@@ -8,21 +8,21 @@ main:
 # side bar
 docs:
   - title: "Tools"
-  - title: "Excel"
-    url: /docs/excel/
-  - title: "SQL"
-    url: /docs/sql/
-  - title: "Python"
-    url: /docs/python/
-  - title: "Power BI"
-    url: /docs/powerbi/
-  - title: "Others"
-    url: /docs/others/
+    - subtitle: "Excel"
+      url: /docs/excel/
+    - subtitle: "SQL"
+      url: /docs/sql/
+    - subtitle: "Python"
+      url: /docs/python/
+    - subtitle: "Power BI"
+      url: /docs/powerbi/
+    - subtitle: "Others"
+      url: /docs/others/
   - title: "Categories"
-  - title: "Preparation and Analysis"
-    url: /docs/categories-analysis/
-  - title: "Visualisation"
-    url: /docs/categories-visualisation/  
+    - subtitle: "Preparation and Analysis"
+      url: /docs/categories-analysis/
+    - subtitle: "Visualisation"
+      url: /docs/categories-visualisation/  
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
