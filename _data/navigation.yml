@@ -9,9 +9,9 @@ main:
 docs:
   - title: "Categories"
     children:  
-      - title: "Preparation and Analysis"
+      - title: "Data Preparation and Analysis"
         url: /portfolio/categories-analysis/
-      - title: "Visualisation"
+      - title: "Data Visualisation"
         url: /portfolio/categories-visualisation/  
         
   - title: "Tools"
@@ -27,11 +27,4 @@ docs:
       - title: "Others"
         url: /portfolio/others/
         
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+
