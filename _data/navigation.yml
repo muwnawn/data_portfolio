@@ -19,13 +19,6 @@ docs:
       url: /docs/tools-powerbi/
     - title: "Others"
       url: /docs/tools-others/
-      
-    - title: Categories
-    children:
-      - title: "Data Preparation and Analysis"
-      url: /docs/categories-analysis/
-      - title: "Data Visualisation"
-      url: /docs/categories-visualisation/
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
