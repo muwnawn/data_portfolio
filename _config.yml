@@ -10,10 +10,10 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "default", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Home"
+title                    : "NGUYEN MINH ANH"
 title_separator          : "-"
 name                     : "Nguyen Minh Anh"
-description              : "Data Analyst Portfolio"
+description              : "Data Analyst"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -89,7 +89,7 @@ author:
   avatar           : "images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Analyst Portfolio"
   location         : "Hanoi"
-  email            : "minhanhtm123"
+  email            : 
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -115,7 +115,7 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-  description      : "A hard-working person with core values including intellectual ability (critical thinking, problem solving) and great enthusiasm for exploring and developing in Data Analysis field."
+  bio              : "A hard-working person with core values including intellectual ability (critical thinking, problem solving) and great enthusiasm for exploring and developing in Data Analysis field."
 
 
 # Reading Files
