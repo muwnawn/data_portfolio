@@ -1,10 +1,10 @@
 ---
 layout: posts
-permalink: /portfolio/ # /data-wrangling/
+permalink: /portfolio/
 title: "Portfolio"
-author_profile: # true
+<!-- author_profile: # true
 side_bar: 
-  nav: "portfolio"
+  nav: "portfolio" -->
 header:
 # image: "/images/fort point.png"
 ---
