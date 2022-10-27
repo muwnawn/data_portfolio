@@ -1,6 +1,6 @@
 ---
 title: DATA VISUALISATION
-layout: tag
+layout: archive
 taxonomy: data_visualisation
 permalink: /portfolio/categories-visualisation/
 author_profile: false
