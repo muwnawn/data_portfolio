@@ -7,18 +7,18 @@ main:
 
 # side bar
 docs:
-  - title: Tools
-  children:
+#   - title: Tools
+#    children:
     - title: "Excel"
-      url: /docs/tools-excel/
+      url: /docs/excel/
     - title: "SQL"
-      url: /docs/tools-sql/
+      url: /docs/sql/
     - title: "Python"
-      url: /docs/tools-python/
+      url: /docs/python/
     - title: "Power BI"
-      url: /docs/tools-powerbi/
+      url: /docs/powerbi/
     - title: "Others"
-      url: /docs/tools-others/
+      url: /docs/others/
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
