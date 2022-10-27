@@ -86,10 +86,10 @@ analytics:
 # Site Author
 author:
   name             : "Nguyen Minh Anh"
-  avatar           : "/images/bio-pic-2.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Data Analyst Portfolio"
   location         : "Hanoi"
-  email            : minhanhtm123@gmail.com
+  email            : "minhanhtm123@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -98,7 +98,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/muwnawn"
+  github           : "muwnawn"
   gitlab           :
   google_plus      :
   keybase          :
@@ -115,6 +115,7 @@ author:
   weibo            :
   xing             :
   youtube          : # "https://youtube.com/c/MichaelRoseDesign"
+  description      : "A hard-working person with core values including intellectual ability (critical thinking, problem solving) and great enthusiasm for exploring and developing in Data Analysis field."
 
 
 # Reading Files
