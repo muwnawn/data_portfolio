@@ -1,22 +1,30 @@
 # main links
 main:
-  - title: "Data Analysis"
-    url: /data-analysis/
-  - title: "Data Visualisation"
-    url: /data-visualisation/
+  - title: "Portfolio"
+    url: /portfolio/
   - title: "Resume"
     url: /resume/  
-tools:
+    
+portfolio:
+- title: "Tools"
+children:
   - title: "Excel"
-    url: /tools-excel/
+    url: /portfolio/tools-excel/
   - title: "SQL"
-    url: /tools-sql/
+    url: /portfolio/tools-sql/
   - title: "Python"
-    url: /tools-python/
+    url: /portfolio/tools-python/
   - title: "Power BI"
-    url: /tools-powerbi/
+    url: /portfolio/tools-powerbi/
   - title: "Others"
-    url: /tools-others/
+    url: /portfolio/tools-others/
+- title: "Categories"
+children:
+  - title: "Preparation and Analysis"
+  url: /portfolio/categories-analysis/
+  - title: "Visualisation"
+  url: /portfolio/categories-visualisation/
+
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
