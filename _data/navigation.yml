@@ -4,6 +4,28 @@ main:
     url: /portfolio/
   - title: "Resume"
     url: /resume/  
+
+# side bar
+portfolio:
+  - title: Tools
+  children:
+    - title: "Excel"
+      url: /portfolio/tools-excel/
+    - title: "SQL"
+      url: /portfolio/tools-sql/
+    - title: "Python"
+      url: /portfolio/tools-python/
+    - title: "Power BI"
+      url: /portfolio/tools-powerbi/
+    - title: "Others"
+      url: /portfolio/tools-others/
+      
+    - title: Categories
+    children:
+      - title: "Data Preparation and Analysis"
+      url: /portfolio/categories-analysis/
+      - title: "Data Visualisation"
+      url: /portfolio/categories-visualisation/
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
