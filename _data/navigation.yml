@@ -6,26 +6,26 @@ main:
     url: /resume/  
 
 # side bar
-sidebar:
+docs:
   - title: Tools
   children:
     - title: "Excel"
-      url: /tools-excel/
+      url: /docs/tools-excel/
     - title: "SQL"
-      url: /tools-sql/
+      url: /docs/tools-sql/
     - title: "Python"
-      url: /tools-python/
+      url: /docs/tools-python/
     - title: "Power BI"
-      url: /tools-powerbi/
+      url: /docs/tools-powerbi/
     - title: "Others"
-      url: /tools-others/
+      url: /docs/tools-others/
       
     - title: Categories
     children:
       - title: "Data Preparation and Analysis"
-      url: /categories-analysis/
+      url: /docs/categories-analysis/
       - title: "Data Visualisation"
-      url: /categories-visualisation/
+      url: /docs/categories-visualisation/
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
