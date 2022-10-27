@@ -8,6 +8,7 @@ main:
 # side bar
 docs:
   - title: "Categories"
+    url: /portfolio/
     children:  
       - title: "Data Preparation and Analysis"
         url: /portfolio/categories-analysis/
@@ -15,6 +16,7 @@ docs:
         url: /portfolio/categories-visualisation/  
         
   - title: "Tools"
+    url: /portfolio/
     children:
       - title: "Excel"
         url: /portfolio/excel/
