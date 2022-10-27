@@ -8,22 +8,20 @@ main:
 # side bar
 docs:
   - title: "Tools"
-#    children:
-    - title: "Excel"
-      url: /docs/excel/
-    - title: "SQL"
-      url: /docs/sql/
-    - title: "Python"
-      url: /docs/python/
-    - title: "Power BI"
-      url: /docs/powerbi/
-    - title: "Others"
-      url: /docs/others/
+  - title: "Excel"
+    url: /docs/excel/
+  - title: "SQL"
+    url: /docs/sql/
+  - title: "Python"
+    url: /docs/python/
+  - title: "Power BI"
+    url: /docs/powerbi/
+  - title: "Others"
+    url: /docs/others/
   - title: "Categories"
-#   children:
-    - title: "Preparation and Analysis"
+  - title: "Preparation and Analysis"
     url: /docs/categories-analysis/
-    - title: "Visualisation"
+  - title: "Visualisation"
     url: /docs/categories-visualisation/  
     
   # - title: "About"
