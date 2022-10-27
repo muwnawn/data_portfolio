@@ -7,6 +7,13 @@ main:
 
 # side bar
 docs:
+  - title: "Categories"
+    children:  
+      - title: "Preparation and Analysis"
+        url: /docs/categories-analysis/
+      - title: "Visualisation"
+        url: /docs/categories-visualisation/  
+        
   - title: "Tools"
     children:
       - title: "Excel"
@@ -19,13 +26,7 @@ docs:
         url: /docs/powerbi/
       - title: "Others"
         url: /docs/others/
-  - title: "Categories"
-    children:  
-      - title: "Preparation and Analysis"
-        url: /docs/categories-analysis/
-      - title: "Visualisation"
-        url: /docs/categories-visualisation/  
-    
+        
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
