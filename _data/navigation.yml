@@ -10,22 +10,22 @@ docs:
   - title: "Categories"
     children:  
       - title: "Preparation and Analysis"
-        url: /docs/categories-analysis/
+        url: /portfolio/categories-analysis/
       - title: "Visualisation"
-        url: /docs/categories-visualisation/  
+        url: /portfolio/categories-visualisation/  
         
   - title: "Tools"
     children:
       - title: "Excel"
-        url: /docs/excel/
+        url: /portfolio/excel/
       - title: "SQL"
-        url: /docs/sql/
+        url: /portfolio/sql/
       - title: "Python"
-        url: /docs/python/
+        url: /portfolio/python/
       - title: "Power BI"
-        url: /docs/powerbi/
+        url: /portfolio/powerbi/
       - title: "Others"
-        url: /docs/others/
+        url: /portfolio/others/
         
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
