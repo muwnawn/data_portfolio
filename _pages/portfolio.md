@@ -2,10 +2,10 @@
 layout: posts
 permalink: /portfolio/
 title: "Portfolio"
+author_profile: false
 sidebar: 
-  nav: "docs"
-<!-- header:
- image: "/images/fort point.png" -->
+  title: "Tools"
+  nav: docs
 ---
 
 
