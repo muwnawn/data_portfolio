@@ -6,6 +6,18 @@ main:
     url: /data-visualisation/
   - title: "Resume"
     url: /resume/  
+tools:
+  - title: "Excel"
+    url: /tools-excel/
+  - title: "SQL"
+    url: /tools-sql/
+  - title: "Python"
+    url: /tools-python/
+  - title: "Power BI"
+    url: /tools-powerbi/
+  - title: "Others"
+    url: /tools-others/
+    
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
