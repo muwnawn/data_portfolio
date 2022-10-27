@@ -1,7 +1,7 @@
 ---
 title: "Sales and Finance Analysis Project"
 date: 2022-10-20
-tags: [data visualisation, data preparation, power_bi, power_query]
+tags: [data_visualisation, data_preparation, power_bi, power_query]
 <!-- header:
   image: "/images/perceptron/percept.jpg" -->
 excerpt: "Data Visualisation, Data Preparation, Power BI, Power Query"
