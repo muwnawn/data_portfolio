@@ -1,12 +1,13 @@
 ---
 title: "Sales and Finance Analysis Project"
 date: 2022-10-20
-tags: [data_visualisation, data_preparation, power_bi, power_query]
-<!-- header:
-  image: "/images/perceptron/percept.jpg" -->
-excerpt: "Data Visualisation, Data Preparation, Power BI, Power Query"
+tags: [data_visualisation, data_preparation, power_bi, power_query, excel]
+header:
+  image: # "/images/perceptron/percept.jpg"
+excerpt: "Data Visualisation, Data Preparation, Power BI, Power Query, Excel"
 mathjax: "true"
 ---
+
 ### Description
 
 Data Visualisations in Power BI after data cleansing in power BI.
