@@ -2,7 +2,7 @@
 title: "Resume"
 permalink: /resume/
 image: "/images/avatar.png"
-author_profile: false
+author_profile: true
 ---
 
 Etc, etc, etc
