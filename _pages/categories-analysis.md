@@ -3,7 +3,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /images/pexels-ithalu-dominguez-907485.jpg
 title: DATA PREPARATION AND ANALYSIS
-layout: tags
+layout: tag
 taxonomy: data_analysis
 entries_layout: grid
 permalink: /portfolio/categories-analysis/
