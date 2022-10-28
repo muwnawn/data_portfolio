@@ -1,16 +1,18 @@
 ---
 layout: splash
 header:
-  actions:
+<!--   actions:
     - label: "Resume"
       url: "/resume/"
     - label: "Linkedin"
-      url: "https://www.linkedin.com/in/muwnawn/"
+      url: "https://www.linkedin.com/in/muwnawn/" -->
+  cta_label: "Resume"
+  cta_url: "/resume/"
   overlay_color: "#7A8288"
   overlay_image: /images/dark_header_ava_small.png
   
 title: About me
-excerpt: "Hi, my name is Minh Anh and I work as a Data Analyst/Business Analyst. I am a fast-learner with core values including intellectual ability (critical thinking, problem solving) and great enthusiasm for exploring and developing in Data Analysis field."
+excerpt: "Hi, my name is Minh Anh and I work as a Data Analyst/Business Analyst. <br> I am a fast-learner with core values including intellectual ability (critical thinking, problem solving) and great enthusiasm for exploring and developing in Data Analysis field."
 <!-- intro: -->
 
 feature_row:
@@ -32,7 +34,7 @@ feature_row:
 
 <!-- {% include feature_row id="intro" type="center" %} -->
 
-{% include feature_row %}
+{% include feature_row id="feature_row" type="center"  %}
 
 <!-- {% include feature_row id="feature_row2" type="left" %}
 
