@@ -258,7 +258,7 @@ defaults:
       share: false
       related: true
       classes: wide
-      entries_layout: grid
+      entries_layout: list
 
   # _pages
   - scope:
