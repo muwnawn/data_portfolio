@@ -5,6 +5,7 @@ header:
 title: DATA VISUALISATION
 layout: tag
 taxonomy: data_visualisation
+entries_layout: grid
 permalink: /portfolio/categories-visualisation/
 author_profile: false
 sidebar: 
