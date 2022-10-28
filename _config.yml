@@ -6,13 +6,13 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "default", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "NGUYEN MINH ANH"
+title                    : "Nguyen Minh Anh Portfolio"
 title_separator          : "-"
-subtitle                 : "Data Analyst Portfolio"
+subtitle                 : "Data Analyst"
 name                     : "Nguyen Minh Anh"
 description              : 
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
