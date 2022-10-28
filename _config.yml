@@ -18,7 +18,7 @@ description              :
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : /images/pexels-ithalu-dominguez-907485.jpg # path of fallback teaser, e.g. "/assets/images/500x300.png"
+teaser                   : # path of fallback teaser, e.g. "/assets/images/500x300.png"
 
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -257,8 +257,6 @@ defaults:
       comments: true
       share: false
       related: true
-      classes: wide
-      entries_layout: list
 
   # _pages
   - scope:
@@ -267,5 +265,3 @@ defaults:
     values:
       layout: single
       author_profile: false
-      classes: wide
-      entries_layout: list
