@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Resume"
 permalink: /resume/
 image: "/images/avatar.png"
