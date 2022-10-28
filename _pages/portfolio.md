@@ -1,6 +1,5 @@
 ---
-layout: page
-entries_layout: grid
+layout: posts
 header:
   overlay_color: "#5e616c"
   overlay_image: /images/pexels-ithalu-dominguez-907485.jpg
