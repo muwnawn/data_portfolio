@@ -4,7 +4,8 @@ header:
   overlay_image: /images/pexels-ithalu-dominguez-907485.jpg
 title: DATA PREPARATION AND ANALYSIS
 layout: tags
-taxonomy: data_preparation, data_analysis
+taxonomy: data_analysis
+entries_layout: grid
 permalink: /portfolio/categories-analysis/
 author_profile: false
 sidebar: 
