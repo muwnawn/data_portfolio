@@ -4,6 +4,7 @@ date: 2022-10-20
 tags: [data_visualisation, data_preparation, power_bi, power_query, excel]
 header:
   image: "/images/DA_img_5.png"
+  teaser: "/images/DA_img_5.png"
 excerpt: "Data Visualisation, Data Preparation, Power BI, Power Query, Excel"
 classes: wide
 mathjax: "true"
