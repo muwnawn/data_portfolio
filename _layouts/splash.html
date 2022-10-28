@@ -4,13 +4,13 @@ layout: default
 
 {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
   {% include page__hero.html %}
-{% elsif page.header.video.id and page.header.video.provider %}
-  {% include page__hero_video.html %}
 {% if page.header.actions %}
   <p>
   {% for action in page.header.actions %}
     <a href="{{ action.url }}" class="btn btn--light-outline btn--large">{{ action.label }}</a>
   {% endfor %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
 {% endif %}
     
 <div id="main" role="main">
