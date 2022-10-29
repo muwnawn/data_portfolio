@@ -39,12 +39,13 @@
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
-    margin-top: 0.5em;
+    margin-top: 0.05em;
   }
 }
 
 .archive__item-title {
   margin-bottom: 0.25em;
+  margin-top: 0.05em;
   font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
@@ -245,6 +246,7 @@
 
   .archive__item-title {
     margin-bottom: 0;
+    margin-top: 0.05em;
   }
 }
 
@@ -425,7 +427,7 @@
 .archive {
   .feature__wrapper {
     .archive__item-title {
-      margin-top: 0.25em;
+      margin-top: 0.05em;
       font-size: 1em;
     }
   }
