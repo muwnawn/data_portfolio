@@ -1,4 +1,7 @@
-/* ==========================================================================
+
+
+
+	/* ==========================================================================
    ARCHIVE
    ========================================================================== */
 
@@ -39,13 +42,13 @@
   border-bottom: 1px solid $border-color;
 
   + .list__item .archive__item-title {
-    margin-top: 0.15em;
+    margin-top: 0.5em;
   }
 }
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  margin-top: 0.15em;
+  margin-top: 0.5em;
   font-family: $sans-serif-narrow;
   line-height: initial;
   overflow: hidden;
@@ -68,7 +71,7 @@
 /* remove border*/
 .page__content {
   .archive__item-title {
-    margin-top: 0.15em;
+    margin-top: 0.5em;
     border-bottom: none;
   }
 }
@@ -211,7 +214,7 @@
   }
 
   .archive__item-title {
-    margin-top: 0.15em;
+    margin-top: 0.5em;
     font-size: $type-size-5;
   }
 
@@ -246,7 +249,7 @@
 
   .archive__item-title {
     margin-bottom: 0;
-    margin-top: 0.15em;
+    margin-top: 0.5em;
   }
 }
 
@@ -427,7 +430,7 @@
 .archive {
   .feature__wrapper {
     .archive__item-title {
-      margin-top: 0.15em;
+      margin-top: 0.5em;
       font-size: 1em;
     }
   }
