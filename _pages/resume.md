@@ -1,15 +1,13 @@
 ---
 permalink: /resume/
 title: "Resume"
-header:
-  image: "/images/DA_img_5.png"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 layouts_gallery:
-  - url: /assets/images/mm-layout-splash.png
-    image_path: /assets/images/mm-layout-splash.png
+  - url: /images/DA_img_5.png
+    image_path: //images/DA_img_5.png
     alt: "splash layout example"
-  - url: /assets/images/mm-layout-single-meta.png
-    image_path: /assets/images/mm-layout-single-meta.png
+  - url: /images/DA_img_3.png
+    image_path: /images/DA_img_3.png
     alt: "single layout with comments and related posts"
   - url: /assets/images/mm-layout-archive.png
     image_path: /assets/images/mm-layout-archive.png
