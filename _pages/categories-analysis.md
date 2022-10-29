@@ -5,8 +5,9 @@
 title: Data Preparation and Analysis
 layout: tag
 taxonomy: data_analysis
-<!-- entries_layout: grid -->
 permalink: /portfolio/categories-analysis/
+entries_layout: list
+classes: wide
 author_profile: false
 sidebar: 
   nav: docs
