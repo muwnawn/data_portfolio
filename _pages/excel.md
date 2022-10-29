@@ -1,5 +1,5 @@
 ---
-title: Tools: Excel
+title: "Tools: Excel"
 layout: tag
 taxonomy: excel
 permalink: /portfolio/excel/
