@@ -29,7 +29,7 @@ feature_row_2:
     url: "/docs/categories-visualisation/"
     btn_class: "btn--primary"
     btn_label: "See projects"
-feature_row_3:
+<!-- feature_row_3:
   - image_path: /images/DA_img_3.png
     alt: "excel"
     title: "Excel"
@@ -43,7 +43,21 @@ feature_row_3:
     excerpt: "Graphical representation of information and data by using Power BI to provide an accessible way to see and understand trends, outliers, and patterns in data."
     url: "/docs/categories-visualisation/"
     btn_class: "btn--primary"
-    btn_label: "See projects"
+    btn_label: "See projects" -->
+---
+
+    <div class="page__related">
+      <h1 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "Recent post" }}</h1>
+      <div class="grid__wrapper">
+        {% for post in site.posts limit:4 %}
+          {% if post.id == page.id %}
+            {% continue %}
+          {% endif %}
+          {% include archive-single.html type="grid" %}
+        {% endfor %}
+      </div>
+    </div>
+
 ---
 
 <!-- {% include feature_row id="intro" type="center" %} -->
@@ -52,6 +66,6 @@ feature_row_3:
 
 {% include feature_row id="feature_row_2" type="right" %}
 
-{% include feature_row id="feature_row_3" %}
+<!-- {% include feature_row id="feature_row_3" %} -->
 
 <!-- {% include feature_row id="feature_row_4" type="center" %} -->
