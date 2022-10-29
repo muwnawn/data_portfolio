@@ -4,7 +4,9 @@ main:
     url: /portfolio/
   - title: "Resume"
     url: /resume/  
-
+  - title: "Learning Note"
+    url: /learning-note/  
+    
 # side bar
 docs:
   - title: "Categories"
