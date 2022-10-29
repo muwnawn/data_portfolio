@@ -46,20 +46,6 @@ feature_row_2:
     btn_label: "See projects" -->
 ---
 
-    <div class="page__related">
-      <h1 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "Recent post" }}</h1>
-      <div class="grid__wrapper">
-        {% for post in site.posts limit:4 %}
-          {% if post.id == page.id %}
-            {% continue %}
-          {% endif %}
-          {% include archive-single.html type="grid" %}
-        {% endfor %}
-      </div>
-    </div>
-
----
-
 <!-- {% include feature_row id="intro" type="center" %} -->
 
 {% include feature_row id="feature_row_1" type="left"  %}
@@ -68,4 +54,14 @@ feature_row_2:
 
 <!-- {% include feature_row id="feature_row_3" %} -->
 
-<!-- {% include feature_row id="feature_row_4" type="center" %} -->
+<div class="grid__wrapper">
+  {% for post in site.posts limit:4 %}
+    {% if post.id == page.id %}
+      {% continue %}
+    {% endif %}
+    {% include archive-single.html type="grid" %}
+  {% endfor %}
+</div>
+
+---
+
