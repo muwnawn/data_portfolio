@@ -1,10 +1,19 @@
 ---
-<!-- layout: archive -->
-title: "Resume"
-<!-- date: 2022-11-20 -->
 permalink: /resume/
+title: "Resume"
 header:
   image: "/images/DA_img_5.png"
-<!-- mathjax: "true" -->
+excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
+layouts_gallery:
+  - url: /assets/images/mm-layout-splash.png
+    image_path: /assets/images/mm-layout-splash.png
+    alt: "splash layout example"
+  - url: /assets/images/mm-layout-single-meta.png
+    image_path: /assets/images/mm-layout-single-meta.png
+    alt: "single layout with comments and related posts"
+  - url: /assets/images/mm-layout-archive.png
+    image_path: /assets/images/mm-layout-archive.png
+    alt: "archive layout example"
+last_modified_at: 2022-05-27T11:59:26-04:00
 author_profile: true
 ---
