@@ -1,7 +1,7 @@
 ---
-title: "Learning Note"
+title: "Learning"
 layout: collection
-permalink: /learning-note/
+permalink: /learning/
 collection: learning
 entries_layout: grid
 classes: wide
