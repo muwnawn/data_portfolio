@@ -241,7 +241,11 @@ compress_html:
   clippings: all
   ignore:
     envs: development
-
+# Collections
+collections:
+  learning:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -255,7 +259,7 @@ defaults:
       read_time: true
       show_date: true
       comments: true
-      share: false
+      share: true
       related: true
 
   # _pages
@@ -265,3 +269,12 @@ defaults:
     values:
       layout: single
       author_profile: true
+      
+  # _learning
+  - scope:
+      path: ""
+      type: learning
+    values:
+      layout: single
+      author_profile: true
+      share: true
