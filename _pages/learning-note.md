@@ -1,4 +1,4 @@
----
+<!-- ---
 title: "Learning Note"
 layout: archive
 permalink: /learning-note/
@@ -23,3 +23,15 @@ author_profile: true
     {% endunless %}
   {% endfor %}
 {% endfor %}
+ -->
+ 
+ ---
+title: "Learning Note"
+layout: collection
+permalink: /learning-note/
+collection: learning
+entries_layout: grid
+classes: wide
+---
+
+<!-- Sample document listing for the collection `_portfolio`. -->
