@@ -190,16 +190,16 @@ body {
     margin-bottom: 2em;
     padding: 3em 0;
     @include clearfix;
-    background-size: cover;
+//     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     -webkit-animation: $intro-transition;
     animation: $intro-transition;
     -webkit-animation-delay: 0.25s;
     animation-delay: 0.25s;
 
     a {
-      color: #000; 
+      color: #fff; 
     }
 
     .wrapper {
@@ -245,10 +245,10 @@ body {
   right: 0;
   margin: 0 auto;
   padding: 2px 5px;
-  color: #fff;
+  color: #000;
   font-family: $caption-font-family;
   font-size: $type-size-7;
-  background: #000;
+  background: #fff;
   text-align: right;
   z-index: 5;
   opacity: 0.5;
@@ -259,7 +259,7 @@ body {
   }
 
   a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
   }
 }
