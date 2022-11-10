@@ -6,6 +6,9 @@ main:
     url: /resume/  
   - title: "Learning"
     url: /learning/  
+  - title: "Test"
+    url: /images/CV_301022_t%E1%BA%A1m.pdf
+
     
 # side bar
 docs:
