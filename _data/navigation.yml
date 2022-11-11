@@ -3,12 +3,9 @@ main:
   - title: "Portfolio"
     url: /portfolio/
   - title: "Resume"
-    url: /resume/  
+    url: /images/CV_301022_t%E1%BA%A1m.pdf  
   - title: "Learning"
     url: /learning/  
-  - title: "Test"
-    url: /images/CV_301022_t%E1%BA%A1m.pdf
-
     
 # side bar
 docs:
