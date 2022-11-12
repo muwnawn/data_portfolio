@@ -8,7 +8,7 @@ header:
   image: "/images/DA_img_5.png"
   teaser: "/images/DA_img_5.png"
 excerpt: "Data Visualisation, Data Preparation, Power BI, Power Query, DAX"
-<!-- mathjax: "true" -->
+mathjax: "true"
 ---
 
 ## Description
