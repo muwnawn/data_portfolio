@@ -1,6 +1,7 @@
 ---
 title: "Sales Analysis Dashboard"
 date: 2022-10-20
+last_modified_at: 2022-11-15T11:59:26-04:00
 tags: 
   - data_visualisation
   - powerbi
@@ -22,10 +23,10 @@ mathjax: "true"
 **How** - This Dashboard was created by Power BI after data-cleansing step in Power Query. 
 
 ## Input
-[Link Dataraw](https://github.com/muwnawn/portfolio_projects/blob/c797439f5af074cbed7e1f2616f37eeaf111cc46/Portfolio_Sales%20and%20Finance%20Analysis/Sales%20and%20Finance%20Data%20Raw.xlsm)
+[Link Dataraw](https://github.com/muwnawn/home/blob/master/assets/Portfolio_Sales%20and%20Finance%20Analysis/Sales%20and%20Finance%20Data%20Raw.xlsm)
 
 ## Output
-[Link Dashborad](https://github.com/muwnawn/portfolio_projects/blob/c797439f5af074cbed7e1f2616f37eeaf111cc46/Portfolio_Sales%20and%20Finance%20Analysis/Sales%20and%20Finance%20Report.pbix)
+[Link Dashborad](https://github.com/muwnawn/home/blob/master/assets/Portfolio_Sales%20and%20Finance%20Analysis/Sales%20Analysis%20Dashboard.pbix)
 
 ### 1. Overview - 
 Main metrics: 
@@ -34,7 +35,7 @@ Main metrics:
 - Total Profit
 - Profit margin (%) = Profit/Sales
 - Sales by Order Month (Time Series Analysis)
-- Customer Growth and Churn Rate by Month (Time Series Analysis)
+- Customer Growth Rate by Month (Time Series Analysis)
 - Sales by Product Category
 - Sales by Region
 
@@ -60,8 +61,11 @@ Main metric:
 Main metrics: 
 - Top 5 Cities by Sales
 - Bottom 5 Cities by Sales
-- Region/Sales Representatives Performance (Cohort Analysis)
-<!-- 
+- Sales by Region
+<!-- - Region/Sales Representatives Performance (Cohort Analysis) -->
+
 ## Preview
-<img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/Finance Report Preview.png" alt="Finance Report Preview">
-<img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/Sales Report Preview.png" alt="Sales Report Preview"> -->
+<img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/SAD_Overview.png" alt="SAD_Overview Preview">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/SAD_Product.png" alt="SAD_Product Preview">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/SAD_Customer.png" alt="SAD_Customer Preview">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/SAD_Region.png" alt="SAD_Region Preview">
