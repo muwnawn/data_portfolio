@@ -28,7 +28,7 @@ mathjax: "true"
 ## Output
 [Link Dashborad](https://github.com/muwnawn/home/blob/master/assets/Portfolio_Sales%20and%20Finance%20Analysis/Sales%20Analysis%20Dashboard.pbix)
 
-### 1. Overview - 
+### 1. Overview 
 Main metrics: 
 - Total Sales
 - Sales Revenue = Sales - Discount
@@ -39,7 +39,8 @@ Main metrics:
 - Sales by Product Category
 - Sales by Region
 
-### 2. Products Report - which products are selling the best & which items are returned
+### 2. Products Report
+<!-- - which products are selling the best & which items are returned -->
 Main metrics: 
 - Total Orders
 - Total Quantity
@@ -48,7 +49,7 @@ Main metrics:
 - Bottom 5 Products by Sales
 - Listing of most Returned Products
 
-### 3. Customer Report - 
+### 3. Customer Report 
 Main metric: 
 - Total Customers
 - Customer Growth Rate = Number of new customers/ Number of customers
@@ -57,7 +58,8 @@ Main metric:
 - Number of Customer by Segment
 - Retention Customer Rate by Last Twelve Months (Cohort Analysis)
 
-### 4. Region/Sales Person Report - which region are selling the best - which product, when, where (city)
+### 4. Region Report
+<!-- - which region are selling the best - which product, when, where (city) -->
 Main metrics: 
 - Top 5 Cities by Sales
 - Bottom 5 Cities by Sales
