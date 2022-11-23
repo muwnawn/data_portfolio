@@ -28,6 +28,10 @@ A data set containing data about approximately ten thousand Android apps from Go
 A data set containing data about approximately seven thousand iOS apps from the App Store. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps).
 
 # Output
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top3_common_apple.png">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom3_common_apple.png">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top3_common_google.png">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom3_common_google.png">
 
 # Detail steps
 ## Step 1: Data Cleaning
@@ -318,11 +322,12 @@ def freq_table(dataset):
 ```python
 freq_table(apple_final)
 ```
-cho ảnh vào đây nha
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/common_apple.png">
+
 ```python
 freq_table(google_final)
 ```
-cho ảnh vào đây nha
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/common_google.png">
 
 ### 2.2. Most Popular Apps by Genre (have the most users) 
 One way to find out what genres are the most popular is to calculate the average number of installs for each app genre. For the Google Play data set, we can find this information in the "Installs" column, but for the App Store data set this information is missing. As a workaround, we'll take the total number of user ratings as a proxy, which we can find in the "rating_count_tot app".
