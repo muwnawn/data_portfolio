@@ -28,11 +28,14 @@ A data set containing data about approximately ten thousand Android apps from Go
 A data set containing data about approximately seven thousand iOS apps from the App Store. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps).
 
 # Output
+
+# Detail steps
 ## Step 1: Data Cleaning
 ### 1.1. Initial Data Checks
 Let's start by opening the two data sets and then continue with exploring the data.
 
 A function named **open_dataset()** that we can use repeatedly to open dataset.
+
 ```python
 def open_dataset(file_path):
     opened_file = open(file_path)
@@ -46,6 +49,7 @@ google = open_dataset('/content/googleplaystore.csv')
 ```
 
 A function named **explore_data()** that we can use repeatedly to explore rows in a more readable way. Other options for this function is **rows_and_columns** to show the number of rows and columns for any data set, **duplicate_records** to show number of distinct values that are recorded duplicately and **missing_value** to show the order of the row if there any missing value in that row.
+
 ```python
 def explore_data(dataset, start=0, end=3, rows_and_columns=True, duplicate_records=True, missing_value=True):
     
@@ -76,9 +80,11 @@ def explore_data(dataset, start=0, end=3, rows_and_columns=True, duplicate_recor
 
 #### 1.1.1. Explore data and Colunm, Row Count
 - **Explore dataset Apple Store Apps**
+
 ```python
 explore_data(apple)
 ```
+
 ['', 'id', 'track_name', 'size_bytes', 'currency', 'price', 'rating_count_tot', 'rating_count_ver', 'user_rating', 'user_rating_ver', 'ver', 'cont_rating', 'prime_genre', 'sup_devices.num', 'ipadSc_urls.num', 'lang.num', 'vpp_lic']
 
 
@@ -97,9 +103,11 @@ Number of duplicate values: 0
 The Apple Store data set has 7197 apps and 17 columns, the columns that seem interesting are: 'track_name', 'currency', 'price', 'rating_count_tot', 'rating_count_ver', and 'prime_genre'. {: .notice--info}
 
 - **Explore dataset Google PLay Store Apps**
+
 ```python
 explore_data(google)
 ```
+
 ['App', 'Category', 'Rating', 'Reviews', 'Size', 'Installs', 'Type', 'Price', 'Content Rating', 'Genres', 'Last Updated', 'Current Ver', 'Android Ver']
 
 
@@ -139,6 +147,7 @@ Number of rows: 10359
 Number of columns: 13 
 
 Number of duplicate values: 0
+
 Missing Values at row: 9991
 
 483 duplicate rows of 410 duplicate values has been removed. {: .notice--info}
@@ -146,6 +155,7 @@ Missing Values at row: 9991
 #### 1.1.3. Remove Inappropriate Records
 - **Removing Non-English Apps**: The company develops English apps therefore only the apps that are designed for an English-speaking audience are analyzed.
 The names of the apps suggest they are not directed toward an English-speaking audience. Below, there are a couple of examples from both data sets:
+
 ```python
 print(apple[71][2])
 print(apple[211][2])
@@ -153,6 +163,7 @@ print(apple[211][2])
 print(google[2539][0])
 print(google[9118][0])
 ```
+
 新浪新闻-阅读最新时事热门头条资讯视频
 
 央视影音-海量央视内容高清直播
@@ -166,6 +177,7 @@ These apps have name that contains a symbol that is not commonly used in English
 All these characters that are specific to English texts are encoded using the ASCII standard. Each ASCII character has a corresponding number between 0 and 127 associated with it, and we can take advantage of that to build a function that checks an app name and tells us whether it contains non-ASCII characters.
 
 To minimize the impact of data loss, we'll only remove an app if its name has more than three non-ASCII characters:
+
 ```python
 def remove_noneng(dataset):
   try:
@@ -190,8 +202,9 @@ def remove_noneng(dataset):
 
 ```python
 apple_engapp = remove_noneng(apple)
-explore_data(apple,False,False)
+explore_data(apple_engapp,False,False)
 ```
+
 Number of rows: 6184 
 
 Number of columns: 17 
@@ -201,8 +214,9 @@ Number of duplicate rows: 0
 
 ```python
 google_engapp = remove_noneng(google_remove_dup)
-explore_data(google,False,False)
+explore_data(google_engapp,False,False)
 ```
+
 Number of rows: 10314 
 
 Number of columns: 13 
@@ -212,6 +226,7 @@ Number of duplicate rows: 0
 Missing Values at row: 9947
 
 - **Isolating Free Apps**: The company only build apps that are free to download and install, and main source of revenue consists of in-app ads.
+
 ```python
 def remone_paid(dataset):
   try:
@@ -221,16 +236,17 @@ def remone_paid(dataset):
   free = []
   free.append(dataset[0])
   for row in dataset[1:]:
-    if row[index_row] != '0':
+    if row[index_row] == '0':
       free.append(row)
   return free
 ```
 
 ```python
-apple_engapp = remove_noneng(apple)
-explore_data(apple,False,False)
+apple_free = remone_paid(apple_engapp)
+explore_data(apple_free,False,False)
 ```
-Number of rows: 6184 
+
+Number of rows: 3223 
 
 Number of columns: 17 
 
@@ -238,23 +254,29 @@ Number of duplicate rows: 0
 
 
 ```python
-google_engapp = remove_noneng(google_remove_dup)
-explore_data(google,False,False)
+google_free = remone_paid(google_engapp)
+explore_data(google_free,False,False)
 ```
-Number of rows: 10314 
+
+Number of rows: 9552 
 
 Number of columns: 13 
 
 Number of duplicate rows: 0
 
-Missing Values at row: 9947
+Missing Values at row: 736
 
-### 1.2. Inspect Variable Types
+<!-- ### 1.2. Inspect Variable Types
 - **Undesirable Column Types**
+ -->
+ 
+### 1.2. Specify Missing Values
+As explored, the Google Play Store Apps dataset has missing values at row 736. In this case, the rows with missing values will be removed.
 
-### 1.3. Specify Missing Values
-- **Presence of missing values**
-- **Variables with many missing values**
+```python
+apple_final = apple_free
+google_final = google_free[0:736] + google_free[(736+1):]
+```
 
 ## Step 2: Data Analysis
 ### 2.1. Most Common Apps by Genre
