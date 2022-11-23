@@ -279,7 +279,52 @@ google_final = google_free
 ## Step 2: Data Analysis
 This project's aim is to determine the kinds of apps that are likely to attract more users because the revenue is highly influenced by the number of users. Therefore, the analysis would find out the most common and the most popular genres for both the App Store and Google Play market.
 ### 2.1. Most Common Apps by Genre (have the most apps) 
-To get a sense of the most common genres for each market, we'll build a frequency table for the prime_genre column of the App Store data set, and the Genres and Category columns of the Google Play data set.
+To get a sense of the most common genres for each market, we'll build a frequency table for the "prime_genre" column of the App Store data set, and the Genres and "Category" columns of the Google Play data set. 
+
+```python
+import pandas as pd
+  
+def freq_table(dataset):
+  try:
+    index_col = dataset[0].index('prime_genre')
+  except:
+    index_col = dataset[0].index('Category')
+
+  total_apps = len(dataset)
+  freq_table = {}
+
+  for row in dataset[1:]:
+    genre = row[index_col]
+    
+    if genre in freq_table:
+        freq_table[genre] +=1
+    else:
+        freq_table[genre] = 1
+
+  for genre in freq_table:
+    freq_table[genre] = round(freq_table[genre]/total_apps*100,2)
+
+  freq_dict = {'Genre':"","Percentage (%)":""}
+  freq_genre = list(freq_table)
+  freq_value = list(freq_table.values())
+  freq_dict['Genre'] = freq_genre
+  freq_dict['Percentage (%)'] = freq_value
+  
+  df = pd.DataFrame.from_dict(freq_dict)
+  df.style #.background_gradient()
+  return df.sort_values(by=['Percentage (%)'],ascending=False)
+```
+  
+```python
+freq_table(apple_final)
+```
+cho ảnh vào đây nha
+```python
+freq_table(google_final)
+```
+cho ảnh vào đây nha
 
 ### 2.2. Most Popular Apps by Genre (have the most users) 
-One way to find out what genres are the most popular is to calculate the average number of installs for each app genre. For the Google Play data set, we can find this information in the Installs column, but for the App Store data set this information is missing. As a workaround, we'll take the total number of user ratings as a proxy, which we can find in the rating_count_tot app.
+One way to find out what genres are the most popular is to calculate the average number of installs for each app genre. For the Google Play data set, we can find this information in the "Installs" column, but for the App Store data set this information is missing. As a workaround, we'll take the total number of user ratings as a proxy, which we can find in the "rating_count_tot app".
+
+
