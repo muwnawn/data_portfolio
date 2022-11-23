@@ -225,7 +225,7 @@ Number of duplicate rows: 0
 
 Missing Values at row: 9947
 
-- **Isolating Free Apps**: The company only build apps that are free to download and install, and main source of revenue consists of in-app ads.
+- **Removing Paid Apps**: The company only build apps that are free to download and install, and main source of revenue consists of in-app ads.
 
 ```python
 def remone_paid(dataset):
@@ -264,18 +264,16 @@ Number of columns: 13
 
 Number of duplicate rows: 0
 
-Missing Values at row: 736
-
 <!-- ### 1.2. Inspect Variable Types
 - **Undesirable Column Types**
  -->
  
 ### 1.2. Specify Missing Values
-As explored, the Google Play Store Apps dataset has missing values at row 736. In this case, the rows with missing values will be removed.
+As explored, the Google Play Store Apps dataset used to have missing values at row 9947. However, after removing Paid Apps, the missing value row has also been removed. Therefore, the dataset no longer have missing values and we have final dataset after cleaning steps.
 
 ```python
 apple_final = apple_free
-google_final = google_free[0:736] + google_free[(736+1):]
+google_final = google_free
 ```
 
 ## Step 2: Data Analysis
