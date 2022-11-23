@@ -18,7 +18,7 @@ mathjax: "true"
 
 **Who** - Team of developers use this report to understand what kinds of apps are likely to attract more users and make data-driven decisions with respect to the kind of apps they build.
 
-**How** - There are 2 main steps which are describe more detail in "Output" part below
+**How** - There are 2 main steps which are describe more detail in "Detail steps" part below
 - Step 1: Data Cleaning (Deleting Wrong Data, Removing Duplicate Entries, Removing Inappropriate Records)
 - Step 2: Data Analysis (Most Common Apps by Genre, Most Popular Apps by Genre)
 
@@ -277,5 +277,9 @@ google_final = google_free
 ```
 
 ## Step 2: Data Analysis
-### 2.1. Most Common Apps by Genre
-### 2.2. Most Popular Apps by Genre
+This project's aim is to determine the kinds of apps that are likely to attract more users because the revenue is highly influenced by the number of users. Therefore, the analysis would find out the most common and the most popular genres for both the App Store and Google Play market.
+### 2.1. Most Common Apps by Genre (have the most apps) 
+To get a sense of the most common genres for each market, we'll build a frequency table for the prime_genre column of the App Store data set, and the Genres and Category columns of the Google Play data set.
+
+### 2.2. Most Popular Apps by Genre (have the most users) 
+One way to find out what genres are the most popular is to calculate the average number of installs for each app genre. For the Google Play data set, we can find this information in the Installs column, but for the App Store data set this information is missing. As a workaround, we'll take the total number of user ratings as a proxy, which we can find in the rating_count_tot app.
