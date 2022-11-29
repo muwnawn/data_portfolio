@@ -28,10 +28,55 @@ A data set containing data about approximately ten thousand Android apps from Go
 A data set containing data about approximately seven thousand iOS apps from the App Store. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps).
 
 # Output
+## Most common genre
+### On App Store
+We can see that among the free English apps, more than a half (58.14%) are games. Entertainment apps are close to 8%, followed by photo and video apps, which are close to 5%. Below 0.2% of the apps are designed for navigation, medical or catalog.
+
+The general impression is that App Store (at least the part containing free English apps) is dominated by apps that are designed for fun (games, entertainment, photo and video, social networking, sports, music, etc.), while apps with practical purposes (education, shopping, utilities, productivity, lifestyle, etc.) are more rare. However, the fact that fun apps are the most numerous doesn't also imply that they also have the greatest number of users — the demand might not be the same as the offer.
+
 <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top3_common_apple.png">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom3_common_apple.png">
+
+### On Google Play
+While the App Store is dominated by apps designed for fun, while Google Play shows a more balanced landscape of both practical and for-fun apps. On Google Play, there are not that many apps designed for fun, and it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.). However, if we investigate this further, we can see that the family category (which accounts for almost 19% of the apps) means mostly games for kids.
+
 <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top3_common_google.png">
 <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom3_common_google.png">
+
+## Most popular genre
+### On App Store
+Now we'd like to get an idea about the kind of apps that have most users. 
+
+On average, navigation apps have the highest number of user reviews, but this figure is heavily influenced by Waze and Google Maps, which have close to half a million user reviews together. The same pattern applies to social networking apps, where the average number is heavily influenced by a few giants like Facebook, Pinterest, Skype, etc. Same applies to music apps, where a few big players like Pandora, Spotify, and Shazam heavily influence the average number.
+
+Our aim is to find popular genres, but navigation, social networking or music apps might seem more popular than they really are. The average number of ratings seem to be skewed by very few apps which have hundreds of thousands of user ratings, while the other apps may struggle to get past the 10,000 threshold. We could get a better picture by removing these extremely popular apps for each genre and then rework the averages, but we'll leave this level of detail for later.
+
+Other genres that seem popular include weather, book, food and drink, or finance. The book genre seem to overlap a bit with the app idea we described above, but the other genres don't seem too interesting to us:
+
+- Weather apps — people generally don't spend too much time in-app, and the chances of making profit from in-app adds are low. Also, getting reliable live weather data may require us to connect our apps to non-free APIs.
+
+- Food and drink — examples here include Starbucks, Dunkin' Donuts, McDonald's, etc. So making a popular food and drink app requires actual cooking and a delivery service, which is outside the scope of our company.
+
+- Finance apps — these apps involve banking, paying bills, money transfer, etc. Building a finance app requires domain knowledge, and we don't want to hire a finance expert just to build an app.
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/popular_apple.png">
+
+### On Google Play
+On average, communication apps have the most installs: 38,456,119. This number is heavily skewed up by a few apps that have over one billion installs (WhatsApp, Facebook Messenger, Skype, Google Chrome, Gmail, and Hangouts), and a few others with over 100 and 500 million installs.
+
+We see the same pattern for the video players category, which is the runner-up with 24,727,872 installs. The market is dominated by apps like Youtube, Google Play Movies & TV, or MX Player. The pattern is repeated for social apps (where we have giants like Facebook, Instagram, Google+, etc.), photography apps (Google Photos and other popular photo editors), or productivity apps (Microsoft Word, Dropbox, Google Calendar, Evernote, etc.).
+
+Again, the main concern is that these app genres might seem more popular than they really are. Moreover, these niches seem to be dominated by a few giants who are hard to compete against.
+
+The game genre seems pretty popular, but previously we found out this part of the market seems a bit saturated, so we'd like to come up with a different app recommendation if possible.
+
+The books and reference genre looks fairly popular as well, with an average number of installs of 8,767,811. It's interesting to explore this in more depth, since we found this genre has some potential to work well on the App Store, and our aim is to recommend an app genre that shows potential for being profitable on both the App Store and Google Play.
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/popular_apple.png">
+
+## Conclusions
+In this project, we analyzed data about the App Store and Google Play mobile apps with the goal of recommending an app profile that can be profitable for both markets.
+
+We concluded that taking a popular book (perhaps a more recent book) and turning it into an app could be profitable for both the Google Play and the App Store markets. The markets are already full of libraries, so we need to add some special features besides the raw version of the book. This might include daily quotes from the book, an audio version of the book, quizzes on the book, a forum where people can discuss the book, etc.
 
 # Detail steps
 ## Step 1: Data Cleaning
@@ -282,54 +327,113 @@ google_final = google_free
 
 ## Step 2: Data Analysis
 This project's aim is to determine the kinds of apps that are likely to attract more users because the revenue is highly influenced by the number of users. Therefore, the analysis would find out the most common and the most popular genres for both the App Store and Google Play market.
-### 2.1. Most Common Apps by Genre (have the most apps) 
+
 To get a sense of the most common genres for each market, we'll build a frequency table for the "prime_genre" column of the App Store data set, and the Genres and "Category" columns of the Google Play data set. 
 
-```python
-import pandas as pd
-  
-def freq_table(dataset):
-  try:
-    index_col = dataset[0].index('prime_genre')
-  except:
-    index_col = dataset[0].index('Category')
+One way to find out what genres are the most popular is to calculate the average number of installs for each app genre. For the Google Play data set, we can find this information in the "Installs" column, but for the App Store data set this information is missing. As a workaround, we'll take the total number of user ratings as a proxy or "rating_count_tot app".
 
-  total_apps = len(dataset)
+### 2.1. Most Common Apps by Genre (have the most apps) 
+The **popular_table** function return a tuple with 2 part, the first is a dictionary of average number of users per app and the second is number of apps both by genre.
+
+```python
+def popular_table(dataset):
+  try:
+    index_genre = dataset[0].index('prime_genre')
+  except:
+    index_genre = dataset[0].index('Category')
+
+  try:
+    index_user = dataset[0].index('rating_count_tot')
+  except:
+    index_user = dataset[0].index('Installs')
+
+  popular_table = {}
   freq_table = {}
 
   for row in dataset[1:]:
-    genre = row[index_col]
+    genre = row[index_genre]
+    
+    if genre in popular_table:
+        popular_table[genre] += int(row[index_user].replace('+','').replace(',',''))
+    else:
+        popular_table[genre] = int(row[index_user].replace('+','').replace(',',''))
+
+  for row in dataset[1:]:
+    genre = row[index_genre]
     
     if genre in freq_table:
         freq_table[genre] +=1
     else:
         freq_table[genre] = 1
 
-  for genre in freq_table:
-    freq_table[genre] = round(freq_table[genre]/total_apps*100,2)
-
-  freq_dict = {'Genre':"","Percentage (%)":""}
-  freq_genre = list(freq_table)
-  freq_value = list(freq_table.values())
-  freq_dict['Genre'] = freq_genre
-  freq_dict['Percentage (%)'] = freq_value
+  for genre in popular_table:
+    popular_table[genre] = round(popular_table[genre]/freq_table[genre],2)
   
-  df = pd.DataFrame.from_dict(freq_dict)
-  df.style #.background_gradient()
-  return df.sort_values(by=['Percentage (%)'],ascending=False)
+  return popular_table, freq_table
 ```
-  
+
+Then I'll create frequency table using pandas library 
 ```python
-freq_table(apple_final)
+freq_google = list(popular_table(google_final))[1]
+freq_apple = list(popular_table(apple_final))[2]
+```
+
+```python
+import pandas as pd
+freq_dict = {'Genre':"","Percentage (%)":""}
+freq_genre = list(freq_apple)
+freq_value = list(freq_apple.values())
+freq_dict['Genre'] = freq_genre
+freq_dict['Percentage (%)'] = freq_value
+  
+df = pd.DataFrame.from_dict(freq_dict)
+df.style #.background_gradient()
+df.sort_values(by=['Percentage (%)'],ascending=False)
 ```
 <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/common_apple.png">
 
 ```python
-freq_table(google_final)
+import pandas as pd
+freq_dict = {'Genre':"","Percentage (%)":""}
+freq_genre = list(freq_google)
+freq_value = list(freq_google.values())
+freq_dict['Genre'] = freq_genre
+freq_dict['Percentage (%)'] = freq_value
+  
+df = pd.DataFrame.from_dict(freq_dict)
+df.style #.background_gradient()
+df.sort_values(by=['Percentage (%)'],ascending=False)
 ```
 <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/common_google.png">
 
 ### 2.2. Most Popular Apps by Genre (have the most users) 
-One way to find out what genres are the most popular is to calculate the average number of installs for each app genre. For the Google Play data set, we can find this information in the "Installs" column, but for the App Store data set this information is missing. As a workaround, we'll take the total number of user ratings as a proxy, which we can find in the "rating_count_tot app".
+Similarly, I create popular table using pandas library.
+```python
+popular_google = list(popular_table(google_final))[0]
+popular_apple = list(popular_table(apple_final))[0]
+```
+```python
+popular_dict = {'Genre':"","Average Users":""}
+popular_genre = list(popular_apple)
+popular_value = list(popular_apple.values())
+popular_dict['Genre'] = popular_genre
+popular_dict['Average Users'] = popular_value
+  
+df = pd.DataFrame.from_dict(popular_dict)
+df.style #.background_gradient()
+df.sort_values(by=['Average Users'],ascending=False)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/popular_apple.png">
 
-
+```python
+popular_dict = {'Genre':"","Average Users":""}
+popular_genre = list(popular_google)
+popular_value = list(popular_google.values())
+popular_dict['Genre'] = popular_genre
+popular_dict['Average Users'] = popular_value
+  
+df = pd.DataFrame.from_dict(popular_dict)
+df.style #.background_gradient()
+df.sort_values(by=['Average Users'],ascending=False)
+```
+<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/popular_apple.png">
