@@ -7,8 +7,8 @@ tags:
   - data_visualisation
   - python
 header:
-  image: "/images/DA_img_5.png"
-  teaser: "/images/DA_img_5.png"
+  image: "/images/Python Programming for Beginners.jpg"
+  teaser: "/images/Python Programming for Beginners.jpg"
 excerpt: "Data Analysis, Data Visualisation, Python"
 classes: wide
 mathjax: "true"
