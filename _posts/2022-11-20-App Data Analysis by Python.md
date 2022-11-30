@@ -13,23 +13,49 @@ excerpt: "Data Analysis, Data Visualisation, Python"
 classes: wide
 mathjax: "true"
 ---
- 
+# Description
+**What** - Profitable App Profiles for the App Store and Google Play Markets. This project's aim is to find mobile app profiles that are profitable for the App Store and Google Play markets. 
+
+**Who** - Team of developers use this report to understand what kinds of apps are likely to attract more users and make data-driven decisions with respect to the kind of apps they build.
+
+**How** - There are 2 main steps which are describe more detail in "Detail steps" part below
+- Step 1: Data Cleaning (Deleting Wrong Data, Removing Duplicate Entries, Removing Inappropriate Records)
+- Step 2: Data Analysis (Most Common Apps by Genre, Most Popular Apps by Genre)
+
+# Input
+A data set containing data about approximately ten thousand Android apps from Google Play. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/lava18/google-play-store-apps).
+
+A data set containing data about approximately seven thousand iOS apps from the App Store. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps).
 
 # Output
 ## Most common genre
 ### On App Store
-We can see that among the free English apps, more than a half (58.14%) are games. Entertainment apps are close to 8%, followed by photo and video apps, which are close to 5%. Below 0.2% of the apps are designed for navigation, medical or catalog.
+We can see that among the free English apps, more than a half (58.14%) are games. Entertainment apps are close to 8%, followed by photo and video apps, which are close to 5%. Only 3.66% of the apps are designed for education, followed by social networking apps which amount for 3.29% of the apps in our data set. 
 
-The general impression is that App Store (at least the part containing free English apps) is dominated by apps that are designed for fun (games, entertainment, photo and video, social networking, sports, music, etc.), while apps with practical purposes (education, shopping, utilities, productivity, lifestyle, etc.) are more rare. However, the fact that fun apps are the most numerous doesn't also imply that they also have the greatest number of users — the demand might not be the same as the offer.
+The general impression is that App Store (at least the part containing free English apps) is dominated by apps that are designed for fun (games, entertainment, photo and video, social networking, sports, music, etc.), while apps with practical purposes (education, shopping, utilities, productivity, lifestyle, etc.) are more rare. 
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top3_common_apple.png">
-<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom3_common_apple.png">
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_common_apple.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_common_apple.png">
+  <figcaption>Top 10 and bottom 10 most common genres on Apple Store.</figcaption>
+</figure>
+
 
 ### On Google Play
-While the App Store is dominated by apps designed for fun, while Google Play shows a more balanced landscape of both practical and for-fun apps. On Google Play, there are not that many apps designed for fun, and it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.). However, if we investigate this further, we can see that the family category (which accounts for almost 19% of the apps) means mostly games for kids.
+While the App Store is dominated by apps designed for fun, while Google Play shows a more balanced landscape of both practical and for-fun apps. On Google Play, there are not that many apps designed for fun, and it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.).
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top3_common_google.png">
-<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom3_common_google.png">
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_common_google.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_common_google.png">
+  <figcaption>Top 10 and bottom 10  most common genres on Google Play Store.</figcaption>
+</figure>
+
+However, if we investigate this further, we can see that the family category (which accounts for almost 18% of the apps) means mostly games for kids.
+
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_common_google_family.png">
+  <figcaption>Top 10 most common categories of "Family" genre on Google Play Store.</figcaption>
+</figure>
 
 ## Most popular genre
 ### On App Store
@@ -46,7 +72,12 @@ Other genres that seem popular include weather, book, food and drink, or finance
 - Food and drink — examples here include Starbucks, Dunkin' Donuts, McDonald's, etc. So making a popular food and drink app requires actual cooking and a delivery service, which is outside the scope of our company.
 
 - Finance apps — these apps involve banking, paying bills, money transfer, etc. Building a finance app requires domain knowledge, and we don't want to hire a finance expert just to build an app.
-<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/popular_apple.png">
+
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_popular_apple.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_popular_apple.png">
+  <figcaption>Top 10 and bottom 10 most popular genres on Apple Store.</figcaption>
+</figure>
 
 ### On Google Play
 On average, communication apps have the most installs: 38,456,119. This number is heavily skewed up by a few apps that have over one billion installs (WhatsApp, Facebook Messenger, Skype, Google Chrome, Gmail, and Hangouts), and a few others with over 100 and 500 million installs.
@@ -59,7 +90,11 @@ The game genre seems pretty popular, but previously we found out this part of th
 
 The books and reference genre looks fairly popular as well, with an average number of installs of 8,767,811. It's interesting to explore this in more depth, since we found this genre has some potential to work well on the App Store, and our aim is to recommend an app genre that shows potential for being profitable on both the App Store and Google Play.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/popular_apple.png">
+<figure>
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_popular_googple.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_popular_google.png">
+  <figcaption>Top 10 and bottom 10 most popular genres on Apple Store.</figcaption>
+</figure>
 
 ## Conclusions
 In this project, we analyzed data about the App Store and Google Play mobile apps with the goal of recommending an app profile that can be profitable for both markets.
