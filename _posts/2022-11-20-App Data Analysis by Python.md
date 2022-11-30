@@ -35,8 +35,8 @@ We can see that among the free English apps, more than a half (58.14%) are games
 The general impression is that App Store (at least the part containing free English apps) is dominated by apps that are designed for fun (games, entertainment, photo and video, social networking, sports, music, etc.), while apps with practical purposes (education, shopping, utilities, productivity, lifestyle, etc.) are more rare. 
 
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_common_apple.png">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_common_apple.png">
+  <a><img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_apple_common.png"></a>
+  <a><img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_apple_common.png"></a>
   <figcaption>Top 10 and bottom 10 most common genres on Apple Store.</figcaption>
 </figure>
 
@@ -45,15 +45,15 @@ The general impression is that App Store (at least the part containing free Engl
 While the App Store is dominated by apps designed for fun, while Google Play shows a more balanced landscape of both practical and for-fun apps. On Google Play, there are not that many apps designed for fun, and it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.).
 
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_common_google.png">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_common_google.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_google_common.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_google_common.png">
   <figcaption>Top 10 and bottom 10  most common genres on Google Play Store.</figcaption>
 </figure>
 
 However, if we investigate this further, we can see that the family category (which accounts for almost 18% of the apps) means mostly games for kids.
 
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_common_google_family.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_google_common_family.png">
   <figcaption>Top 10 most common categories of "Family" genre on Google Play Store.</figcaption>
 </figure>
 
@@ -74,8 +74,8 @@ Other genres that seem popular include weather, book, food and drink, or finance
 - Finance apps — these apps involve banking, paying bills, money transfer, etc. Building a finance app requires domain knowledge, and we don't want to hire a finance expert just to build an app.
 
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_popular_apple.png">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_popular_apple.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_apple_popular.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_apple_popular.png">
   <figcaption>Top 10 and bottom 10 most popular genres on Apple Store.</figcaption>
 </figure>
 
@@ -91,8 +91,8 @@ The game genre seems pretty popular, but previously we found out this part of th
 The books and reference genre looks fairly popular as well, with an average number of installs of 8,767,811. It's interesting to explore this in more depth, since we found this genre has some potential to work well on the App Store, and our aim is to recommend an app genre that shows potential for being profitable on both the App Store and Google Play.
 
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_popular_googple.png">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_popular_google.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_google_popular.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_google_popular.png">
   <figcaption>Top 10 and bottom 10 most popular genres on Apple Store.</figcaption>
 </figure>
 
