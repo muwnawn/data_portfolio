@@ -7,21 +7,20 @@ header:
   image: "/images/STATS.jpg"
   teaser: "/images/STATS.jpg"
 toc: true
-<!-- toc_label: "Unique Title"
-toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix) -->
+toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
 toc_sticky: true
 ---
 
-# 0. FOUNDATION
-## 0.1. Populations and Parameters
+## 0. FOUNDATION
+### 0.1. Populations and Parameters
 Population is any large collection of objects or individuals.
 Parameters is any summary number, like an average or percentage, that describes the entire population.
 
-## 0.2. Samples and Statistics
+### 0.2. Samples and Statistics
 Samples	is a representative group drawn from the population.
 Statistics is any summary number, like an average or percentage, that describes the sample.
 
-## 0.3. Statistics Techniques
+### 0.3. Statistics Techniques
 Descriptive statistics:	describe data in ways to capture the essence of the information in the data
 Inferential statistics:	draw conclusions from data about the population
 
@@ -30,25 +29,25 @@ Inferential statistics:	draw conclusions from data about the population
 	<figcaption>Here is a picture explain it all.</figcaption>
 </figure>
 
-# 1. CLASSIFYING AND SUMMARIZING DATA
-## 1.1. Classifying Data
-### Qualitative (Categorical) - Định tính
+## 1. CLASSIFYING AND SUMMARIZING DATA
+### 1.1. Classifying Data
+#### Qualitative (Categorical) - Định tính
 * Binary – where there are two choices, e.g. Male and Female
 * Ordinal – where the names imply levels with hierarchy or order of preference, e.g. level of education
 * Nominal – where no hierarchy is implied, e.g. political party affiliation.
 	For example, for coding purposes, you may assign Male as 0, Female as 1. The numbers 0 and 1 stand only for the two categories and there is no order between them.
 
-### Quantitative Data - Định lượng	
+#### Quantitative Data - Định lượng	
 * Discrete - or “counted” as in the number of people in attendance
 * Continuous - or “measured” as in the weight or height of a person.
 
-## 0.2. Samples and Statistics
+### 0.2. Samples and Statistics
 Samples	is a representative group drawn from the population.
 Statistics is any summary number, like an average or percentage, that describes the sample.
 
-## 0.3. Statistics Techniques
+### 0.3. Statistics Techniques
 Descriptive statistics:	describe data in ways to capture the essence of the information in the data
 Inferential statistics:	draw conclusions from data about the population
 
-# Sources
+## Sources
 1. [STAT 500: Applied Statistics](https://online.stat.psu.edu/stat500/)
