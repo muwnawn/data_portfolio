@@ -7,7 +7,6 @@ header:
   image: "/images/STATS.jpg"
   teaser: "/images/STATS.jpg"
 excerpt: ""
-classes: wide
 toc: true
 toc_icon: "heart"
 ---
@@ -26,18 +25,23 @@ toc_icon: "heart"
 #### SQL Statement
 - Clauses are in-built functions helping us filter and analyze data quickly.
 - SQL Clauses examples: SELECT, INSERT, DELETE,...
+
 #### SQL Clauses
 - Clauses are in-built functions helping us filter and analyze data quickly.
 - SQL Clauses examples: WHERE, AND, TOP,...
+
 #### [SQL Operator](https://www.w3schools.com/sql/sql_operators.asp)
 - A reserved word or a character used primarily in an SQL statement's WHERE clause to perform operation(s).
 - SQL Clauses examples: =, +, IN, IS NULL,...
+
 #### SQL Constraint
 - Limit the type of data when the table is first created via the CREATE TABLE statement, or after the table is already created via the ALTER TABLE statement.
 - SQL Constraint examples: NOT NULL, UNIQUE, PRIMARY KEY,...
+
 #### SQL Keyword
 - the reserved set of words in any programming language that are used to perform various operations.
 - SQL Clauses examples: CREATE, DROP, DISTINCT,...
+
 #### SQL Functions
 - Built-in functions for performing calculations on data
 - SQL Functions examples: MAX, SUM, COUNT,...
@@ -103,9 +107,9 @@ WHERE Store_Name IN
 ```
 
 ### 2.4. [Pivoting Data](https://mode.com/sql-tutorial/sql-pivot-table/)
-#### Pivoting rows to columns
-#### Pivoting columns to rows
-- Using [CROSS JOIN](https://www.sqlshack.com/sql-cross-join-with-examples/)
+- Pivoting rows to columns
+- Pivoting columns to rows
+  - Using [CROSS JOIN](https://www.sqlshack.com/sql-cross-join-with-examples/)
 
 ### 2.5. SQL Stored Procedures
 - What: A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
@@ -169,6 +173,7 @@ SELECT *
 - Clustered indexes are the unique index per table that uses the primary key to organize the data that is within the table.
 - Creating Clustered Indexes: The clustered index will be automatically created when the primary key is defined. 
 - Clustered indexes use the primary key sorted in ascending order.
+
 #### Non-Clustered Indexes
 - Non-clustered indexes are sorted references for a specific field, from the main table, that hold pointers back to the original entries of the table.
 - Creating Non-Clustered Indexes: CREATE INDEX
