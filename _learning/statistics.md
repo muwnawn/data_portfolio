@@ -1,5 +1,5 @@
 ---
-title: "All about Statistics that my smol brain can remember (i mean this note is precise and concise)"
+title: "A note about Statistics"
 date: 2022-11-01
 last_modified_at: 2022-11-01T11:59:26-04:00
 author_profile: true
@@ -7,9 +7,6 @@ header:
   image: "/images/STATS.jpg"
   teaser: "/images/STATS.jpg"
 ---
-
-As the title written, this note is what i think the most important when first access to statistics world. In this post, we will go through 6 parts including
-
   * Part 0: Foundations
   * Part 1: Classifying and Summarizing Data
   * Part 2: Probability
@@ -32,7 +29,7 @@ Descriptive statistics:	describe data in ways to capture the essence of the info
 Inferential statistics:	draw conclusions from data about the population
 
 <figure>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCMXUDZGeezz8p7LF9OO18EVC0P0_tsKP9w&usqp=CAU"></a>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJCMXUDZGeezz8p7LF9OO18EVC0P0_tsKP9w&usqp=CAU">
 	<figcaption>Here is a picture explain it all.</figcaption>
 </figure>
 
@@ -43,6 +40,7 @@ Inferential statistics:	draw conclusions from data about the population
 * Ordinal – where the names imply levels with hierarchy or order of preference, e.g. level of education
 * Nominal – where no hierarchy is implied, e.g. political party affiliation.
 	For example, for coding purposes, you may assign Male as 0, Female as 1. The numbers 0 and 1 stand only for the two categories and there is no order between them.
+
 ### Quantitative Data - Định lượng	
 * Discrete - or “counted” as in the number of people in attendance
 * Continuous - or “measured” as in the weight or height of a person.
@@ -56,7 +54,4 @@ Descriptive statistics:	describe data in ways to capture the essence of the info
 Inferential statistics:	draw conclusions from data about the population
 
 # Sources
-<img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/Finance Report Preview.png" alt="Finance Report Preview">
-<img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/Sales Report Preview.png" alt="Sales Report Preview">
-
-[STAT 500: Applied Statistics](https://online.stat.psu.edu/stat500/)
+1. [STAT 500: Applied Statistics](https://online.stat.psu.edu/stat500/)
