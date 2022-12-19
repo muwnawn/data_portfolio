@@ -6,6 +6,8 @@ author_profile: true
 header:
   image: "/images/STATS.jpg"
   teaser: "/images/STATS.jpg"
+excerpt: ""
+classes: wide
 toc: true
 toc_icon: "heart"
 ---
