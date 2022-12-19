@@ -1,11 +1,13 @@
 ---
 title: "A note about SQL"
-date: 2022-12-20
-last_modified_at: 2022-12-20T11:59:26-04:00
+date: 2022-12-18
+last_modified_at: 2022-12-18T11:59:26-04:00
 author_profile: true
 header:
   image: "/images/STATS.jpg"
   teaser: "/images/STATS.jpg"
+excerpt: ""
+classes: wide
 toc: true
 toc_icon: "heart"
 ---
