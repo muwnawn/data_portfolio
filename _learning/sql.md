@@ -7,7 +7,7 @@ header:
   image: "/images/DA_img_5.png"
   teaser: "/images/DA_img_5.png"
 toc: true
-toc_sticky: true
+<!-- toc_sticky: true -->
 ---
 
 ## 1. FUNDAMENTAL
