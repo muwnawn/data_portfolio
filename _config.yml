@@ -242,10 +242,10 @@ compress_html:
   ignore:
     envs: development
 # Collections
-collections:
-  learning:
-    output: true
-    permalink: /:collection/:path/
+# collections:
+#   learning:
+#     output: true
+#     permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -269,8 +269,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      show_date: true
       
   # _learning
   - scope:
