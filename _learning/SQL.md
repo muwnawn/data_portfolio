@@ -1,14 +1,13 @@
 ---
-title: "A note about Statistics"
-date: 2022-11-01
-last_modified_at: 2022-11-01T11:59:26-04:00
+title: "A note about SQL"
+date: 2022-12-20
+last_modified_at: 2022-12-20T11:59:26-04:00
 author_profile: true
 header:
   image: "/images/STATS.jpg"
   teaser: "/images/STATS.jpg"
 toc: true
-toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: true
+toc_icon: "heart"
 ---
 
 ## 1. FUNDAMENTAL
