@@ -6,7 +6,10 @@ author_profile: true
 header:
   image: "/images/DA_img_5.png"
   teaser: "/images/DA_img_5.png"
+toc: true
+toc_sticky: true
 ---
+
 ## 1. FUNDAMENTAL
 ### 1.1. SQL Definition 
 - Aim: store, manipulate, and query data stored in relational databases.
@@ -24,7 +27,7 @@ header:
 #### SQL Clauses
 - Clauses are in-built functions helping us filter and analyze data quickly.
 - SQL Clauses examples: WHERE, AND, TOP,...
-#### [SQL Operator]([url](https://www.w3schools.com/sql/sql_operators.asp)
+#### [SQL Operator](https://www.w3schools.com/sql/sql_operators.asp)
 - A reserved word or a character used primarily in an SQL statement's WHERE clause to perform operation(s).
 - SQL Clauses examples: =, +, IN, IS NULL,...
 #### SQL Constraint
@@ -146,8 +149,8 @@ SELECT *
   - Reduce table sizes before joining with subqueries.
   
 ### 3.3. Aggregations
-  - JOINs and UNIONs: Combine horizontally and vertically information from multiple tables.
-#### UNION
+#### JOINs: Combine horizontally multiple tables.
+#### UNIONs: Combine vertically multiple tables.
   - UNION does not return duplicate records (similar to SELECT DISTINCT)
   - UNION & UNION ALL: The only difference is UNION returns distinct records, while UNION ALL returns all records.
   - Like UNION, these queries below also return unique values
