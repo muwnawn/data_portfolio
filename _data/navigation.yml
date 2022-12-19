@@ -4,8 +4,8 @@ main:
     url: /portfolio/
   - title: "Resume"
     url: /images/CV_301022_NGUYEN%20MINH%20ANH.pdf  
-#   - title: "Learning"
-#     url: /learning/  
+  - title: "Learning Note"
+    url: /learning/  
     
 # side bar
 docs:
@@ -28,7 +28,7 @@ docs:
         url: /portfolio/python/
       - title: "Power BI"
         url: /portfolio/powerbi/
-      - title: "Others"
-        url: /portfolio/others/
+#       - title: "Others"
+#         url: /portfolio/others/
         
 
