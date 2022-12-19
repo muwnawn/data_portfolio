@@ -7,20 +7,19 @@ header:
   image: "/images/STATS.jpg"
   teaser: "/images/STATS.jpg"
 toc: true
-toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
-toc_sticky: true
+toc_icon: "heart"
 ---
 
-## 0. FOUNDATION
-### 0.1. Populations and Parameters
+## 1. FOUNDATION
+### 1.1. Populations and Parameters
 Population is any large collection of objects or individuals.
 Parameters is any summary number, like an average or percentage, that describes the entire population.
 
-### 0.2. Samples and Statistics
+### 1.2. Samples and Statistics
 Samples	is a representative group drawn from the population.
 Statistics is any summary number, like an average or percentage, that describes the sample.
 
-### 0.3. Statistics Techniques
+### 1.3. Statistics Techniques
 Descriptive statistics:	describe data in ways to capture the essence of the information in the data
 Inferential statistics:	draw conclusions from data about the population
 
@@ -29,8 +28,8 @@ Inferential statistics:	draw conclusions from data about the population
 	<figcaption>Here is a picture explain it all.</figcaption>
 </figure>
 
-## 1. CLASSIFYING AND SUMMARIZING DATA
-### 1.1. Classifying Data
+## 2. CLASSIFYING AND SUMMARIZING DATA
+### 2.1. Classifying Data
 #### Qualitative (Categorical) - Định tính
 * Binary – where there are two choices, e.g. Male and Female
 * Ordinal – where the names imply levels with hierarchy or order of preference, e.g. level of education
@@ -41,13 +40,13 @@ Inferential statistics:	draw conclusions from data about the population
 * Discrete - or “counted” as in the number of people in attendance
 * Continuous - or “measured” as in the weight or height of a person.
 
-### 0.2. Samples and Statistics
+### 2.2. Samples and Statistics
 Samples	is a representative group drawn from the population.
 Statistics is any summary number, like an average or percentage, that describes the sample.
 
-### 0.3. Statistics Techniques
+### 2.3. Statistics Techniques
 Descriptive statistics:	describe data in ways to capture the essence of the information in the data
 Inferential statistics:	draw conclusions from data about the population
 
-## Sources
+## 3. Sources
 1. [STAT 500: Applied Statistics](https://online.stat.psu.edu/stat500/)
