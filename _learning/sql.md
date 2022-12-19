@@ -7,7 +7,8 @@ header:
   image: "/images/DA_img_5.png"
   teaser: "/images/DA_img_5.png"
 toc: true
-<!-- toc_sticky: true -->
+toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
+toc_sticky: true
 ---
 
 ## 1. FUNDAMENTAL
