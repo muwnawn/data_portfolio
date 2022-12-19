@@ -6,16 +6,13 @@ author_profile: true
 header:
   image: "/images/STATS.jpg"
   teaser: "/images/STATS.jpg"
+toc: true
+<!-- toc_label: "Unique Title"
+toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix) -->
+toc_sticky: true
 ---
-  * Part 0: Foundations
-  * Part 1: Classifying and Summarizing Data
-  * Part 2: Probability
-  * Part 3: Probability Distributions
-  * Part 4: Sampling Distributions
-  * Part 5: Confidence Intervals
-  * Part 6: Hypothesis Tests
 
-# 0. Foundations: Some basic knowledge before we start
+# 0. FOUNDATION
 ## 0.1. Populations and Parameters
 Population is any large collection of objects or individuals.
 Parameters is any summary number, like an average or percentage, that describes the entire population.
@@ -33,7 +30,7 @@ Inferential statistics:	draw conclusions from data about the population
 	<figcaption>Here is a picture explain it all.</figcaption>
 </figure>
 
-# 1. Classifying and Summarizing Data
+# 1. CLASSIFYING AND SUMMARIZING DATA
 ## 1.1. Classifying Data
 ### Qualitative (Categorical) - Định tính
 * Binary – where there are two choices, e.g. Male and Female
