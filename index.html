@@ -36,8 +36,8 @@ feature_row_2:
 <!-- <div class="page__related">
   <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "Recent Post" }}</h2> -->
 <!-- <div class="grid__wrapper"> -->
-<div>
-  <h2>{{ site.data.ui-text[site.locale].related_label | default: "Recent Post" }}</h2>
+<div style = "text-align: center;">
+  <h2>"Recent Post"</h2>
   {% for post in site.posts limit:4 %}
     {% if post.id == page.id %}
       {% continue %}
