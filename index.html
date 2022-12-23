@@ -35,12 +35,14 @@ feature_row_2:
 
 <!-- <div class="page__related">
   <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "Recent Post" }}</h2> -->
-<div class="grid__wrapper">
+<!-- <div class="grid__wrapper"> -->
+<div>
+  <h2>{{ site.data.ui-text[site.locale].related_label | default: "Recent Post" }}</h2>
   {% for post in site.posts limit:4 %}
     {% if post.id == page.id %}
       {% continue %}
     {% endif %}
-    {% include archive-single.html type="grid" %}
+    {% include archive-single.html type="list" %}
   {% endfor %}
+  <a href="https://muwnawn.github.io/home/portfolio/" class="btn btn--primary">See More</a>
 </div>
-<!-- </div> -->
