@@ -4,8 +4,8 @@ date: 2022-12-18
 last_modified_at: 2022-12-18T11:59:26-04:00
 author_profile: true
 header:
-  image: "/images/STATS.jpg"
-  teaser: "/images/STATS.jpg"
+  image: "https://www.datocms-assets.com/14946/1627286560-sql-databases.png?auto=format&corner-radius=16&dpr=1.5&fit=crop&h=312&mask=corners&q=45&w=568"
+  teaser: "https://www.datocms-assets.com/14946/1627286560-sql-databases.png?auto=format&corner-radius=16&dpr=1.5&fit=crop&h=312&mask=corners&q=45&w=568"
 excerpt: ""
 classes: wide
 toc: true
