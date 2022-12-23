@@ -32,3 +32,15 @@ feature_row_2:
 
 {% include feature_row id="feature_row_1" type="left"  %}
 {% include feature_row id="feature_row_2" type="right" %}
+
+<div class="page__related">
+  <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "Recent Post" }}</h2>
+  <div class="grid__wrapper">
+    {% for post in site.posts limit:4 %}
+      {% if post.id == page.id %}
+        {% continue %}
+      {% endif %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
+</div>
