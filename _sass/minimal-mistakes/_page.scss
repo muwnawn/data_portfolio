@@ -238,6 +238,7 @@ body {
 .page__hero-image {
   width: 100%;
   height: auto;
+  text-align: center;
   -ms-interpolation-mode: bicubic;
 }
 
@@ -359,6 +360,7 @@ body {
 .taxonomy__section {
   margin-bottom: 2em;
   padding-bottom: 1em;
+  text-align: center;
 
   &:not(:last-child) {
     border-bottom: solid 1px $border-color;

@@ -7,10 +7,10 @@ header:
     - label: "Linkedin"
       url: "https://www.linkedin.com/in/muwnawn/"
   overlay_color: "#ffffff"
-  overlay_image: /images/avatar.png
+  overlay_image: "https://drive.google.com/file/d/1fa6ITV1rnld1lEIaUR6hiZNClofYUan9/view?usp=sharing"
   
-title: About me
-excerpt: "Hi, my name is Minh Anh and I work as a Data Analyst/Business Analyst. <br> I am a fast-learner with core values including intellectual ability (critical thinking, problem solving) and great enthusiasm for exploring and developing in Data Analysis field."
+<!-- title: About me -->
+excerpt: "Hi, my name is Minh Anh and I work as a Data Analyst/Product Owner based in Hanoi. <br> I am a fast-learner with core values including intellectual ability (critical thinking, problem solving) and great enthusiasm for exploring and developing in Data Analysis field."
 
 feature_row_1:
   - image_path: /images/DA_img_1.png
@@ -32,3 +32,15 @@ feature_row_2:
 
 {% include feature_row id="feature_row_1" type="left"  %}
 {% include feature_row id="feature_row_2" type="right" %}
+
+<div class="page__related">
+  <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "Recent Post" }}</h2>
+  <div class="grid__wrapper">
+    {% for post in site.posts limit:4 %}
+      {% if post.id == page.id %}
+        {% continue %}
+      {% endif %}
+      {% include archive-single.html type="grid" %}
+    {% endfor %}
+  </div>
+</div>
