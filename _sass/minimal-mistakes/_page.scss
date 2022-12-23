@@ -193,7 +193,7 @@ body {
     margin-bottom: 2em;
     padding: 3em 0;
     @include clearfix;
-//     background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
     -webkit-animation: $intro-transition;
@@ -218,7 +218,7 @@ body {
     .page__meta,
     .page__lead,
     .btn {
-      color: #3d4144;
+      color: #00000;
 //       text-shadow: 1px 1px 4px rgba(#fff, 0.5);
     }
 
