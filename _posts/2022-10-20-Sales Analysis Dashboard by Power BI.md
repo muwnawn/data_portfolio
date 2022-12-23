@@ -29,7 +29,7 @@ mathjax: "true"
 [Link Dashborad](https://github.com/muwnawn/home/blob/master/assets/Portfolio_Sales%20and%20Finance%20Analysis/Sales%20Analysis%20Dashboard.pbix)
 
 ### 1. Overview 
-Main metrics: 
+#### Main metrics: 
 - Total Sales
 - Sales Revenue = Sales - Discount
 - Total Profit
@@ -41,7 +41,7 @@ Main metrics:
 
 ### 2. Products Report
 <!-- - which products are selling the best & which items are returned -->
-Main metrics: 
+#### Main metrics: 
 - Total Orders
 - Total Quantity
 - Returned Orders
@@ -50,7 +50,7 @@ Main metrics:
 - Listing of most Returned Products
 
 ### 3. Customer Report 
-Main metric: 
+#### Main metric: 
 - Total Customers
 - Customer Growth Rate = Number of new customers/ Number of customers
 - Customer Churn Rate = Number of lost customers/ Number of customers 
@@ -60,7 +60,7 @@ Main metric:
 
 ### 4. Region Report
 <!-- - which region are selling the best - which product, when, where (city) -->
-Main metrics: 
+#### Main metrics: 
 - Top 5 Cities by Sales
 - Bottom 5 Cities by Sales
 - Sales by Region
@@ -68,6 +68,9 @@ Main metrics:
 
 ## Preview
 <img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/SAD_Overview.png" alt="SAD_Overview Preview">
+
 <img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/SAD_Product.png" alt="SAD_Product Preview">
+
 <img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/SAD_Customer.png" alt="SAD_Customer Preview">
+
 <img src="{{ site.url }}{{ site.baseurl }}/assets/Portfolio_Sales and Finance Analysis/SAD_Region.png" alt="SAD_Region Preview">
