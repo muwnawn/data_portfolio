@@ -33,12 +33,9 @@ feature_row_2:
 {% include feature_row id="feature_row_1" type="left"  %}
 {% include feature_row id="feature_row_2" type="right" %}
 
-<!-- <div class="page__related">
-  <h2 class="page__related-title">{{ site.data.ui-text[site.locale].related_label | default: "Recent Post" }}</h2> -->
-<!-- <div class="grid__wrapper"> -->
 <div style = "text-align: center;">
-  <h2>"Recent Post"</h2>
-  {% for post in site.posts limit:4 %}
+  <h2 class="archive__item-title">Recent Post</h2>
+  {% for post in site.posts limit:6 %}
     {% if post.id == page.id %}
       {% continue %}
     {% endif %}
