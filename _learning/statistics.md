@@ -60,12 +60,36 @@ published: false
 
 ## 3. HYPOTHESIS TESTING FOR ONE SAMPLE
 ### 3.1. Some term
-- Confidence Intervals
-- of errors:
-
-### 3.2. Step
-
+- Confidence Intervals:
+<p align = 'center'>
+  <img src = "https://conversionsciences.com/wp-content/uploads/2016/09/confidence-interval-example.webp">
+<p/>
+- Margin of Errors:
+<p align = 'center'>
+  <img src = "https://conversionsciences.com/wp-content/uploads/2016/09/confidence-interval-example.webp">
+<p/>
+- Regression toward the mean is “the phenomenon that if a variable is extreme on its first measurement, it will tend to be closer to the average on its second measurement.” This ensures that as we continue increasing the sample size and the length of observation, the mean of our observations will get closer and closer to the true mean of the population.
+- Null Hypothesis (Ho): a baseline assumption that there is no relationship between two data sets. When a statistical hypothesis test is run, the results either disprove the null hypothesis or they fail to disprove the null hypothesis.
+    - Example: When taking AB test, we automatically assume Variation B is NOT a meaningful improvement over Variation A. That is our null hypothesis. Either we disprove it by showing that Variation B’s conversion rate is a statistically significant improvement over Variation A, or we fail to disprove it.
+- Statistical Significance: when the p-value < the significance level
+    - p-value is the probability of obtaining at least as extreme results given that the null hypothesis is true.
+    - significance level (alpha) is the probability of rejecting the null hypothesis given that it is true.
+     
+### 3.2. Steps
+- Step 1. Set up the hypotheses and check conditions
+    - Hypothesis Test for One-Sample Proportion
+    - Hypothesis Testing for One-Sample Mean
+- Step 2. Decide on the significance level, alpha
+- Step 3. Calculate the test statistic
+Hypothesis Test for One-Sample Proportion
+Hypothesis Testing for One-Sample Mean
+- Step 4. Calculate probability value (p-value)
+    - Hypothesis Test for One-Sample Proportion
+    - Hypothesis Testing for One-Sample Mean
+Z-table for Proportion
+T-table for Mean
+- Step 5. Make a decision about the null hypothesis
 
 ## 3. SOURCES
 1. [STAT 500: Applied Statistics](https://online.stat.psu.edu/stat500/)
-2. 
+2. [A/B Testing Statistics](https://conversionsciences.com/ab-testing-statistics/#:~:text=An%20AB%20test%20is%20an,statistically%20significant%20relationship%20or%20not)
