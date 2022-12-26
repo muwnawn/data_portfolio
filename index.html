@@ -10,7 +10,7 @@ header:
   overlay_image: "https://c4.wallpaperflare.com/wallpaper/138/193/254/painting-minimalism-pink-sky-clouds-hd-wallpaper-preview.jpg"
   
 title: About
-excerpt: "Hi, my name is Minh Anh and I work as a Data Analyst/Product Owner based in Hanoi. <br> I am a fast-learner with core values including intellectual ability (critical thinking, problem solving) and great enthusiasm for exploring and developing in Data Analysis field."
+excerpt: "Hi, my name is Minh Anh and I work as a Data Analyst based in Hanoi. <br> I am a fast-learner with core values including intellectual ability (critical thinking, problem solving) and great enthusiasm for exploring and developing in Data Analysis field."
 
 feature_row_1:
   - image_path: /images/DA_img_1.png
@@ -33,7 +33,7 @@ feature_row_2:
 {% include feature_row id="feature_row_1" type="left"  %}
 {% include feature_row id="feature_row_2" type="right" %}
 
-<div style = "text-align: center;">
+<div class="archive" style = "text-align: center;">
   <h1>Recent Post</h1>
   {% for post in site.posts limit:6 %}
     {% if post.id == page.id %}
