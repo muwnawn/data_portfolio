@@ -34,7 +34,7 @@ feature_row_2:
 {% include feature_row id="feature_row_2" type="right" %}
 
 <div style = "text-align: center;">
-  <h2 class="archive__item-title">Recent Post</h2>
+  <h1>Recent Post</h1>
   {% for post in site.posts limit:6 %}
     {% if post.id == page.id %}
       {% continue %}
