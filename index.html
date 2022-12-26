@@ -36,7 +36,7 @@ feature_row_2:
 <div class="feature__wrapper" style = "text-align: center;">
   <h1>Recent Post</h1>
   <div class="grid__wrapper">
-    {% for post in site.posts limit:4 %}
+    {% for post in site.posts limit:6%}
       {% if post.id == page.id %}
         {% continue %}
       {% endif %}
