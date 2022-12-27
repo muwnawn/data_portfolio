@@ -14,13 +14,13 @@ classes: wide
 mathjax: "true"
 ---
 ## Description
-**What** - Profitable App Profiles for the App Store and Google Play Markets. This project's aim is to find mobile app profiles that are profitable for the App Store and Google Play markets. 
+This project's aim is to find mobile app profiles that are profitable for the App Store and Google Play markets. 
 
-**Who** - Team of developers use this report to understand what kinds of apps are likely to attract more users and make data-driven decisions with respect to the kind of apps they build.
+This report helps developers understand what kinds of apps are likely to attract more users and make data-driven decisions to the kind of apps they would build. Note: only free English apps are analysed.
 
-**How** - There are 2 main steps which are describe more detail in "Detail steps" part below
+**How** - There are 2 main steps which are described in "Detail steps" part below
 - Step 1: Data Cleaning (Deleting Wrong Data, Removing Duplicate Entries, Removing Inappropriate Records)
-- Step 2: Data Analysis (Most Common Apps by Genre, Most Popular Apps by Genre)
+- Step 2: Data Analysis (Find Most Common Apps by Genre, Most Popular Apps by Genre)
 
 ## Input
 A data set containing data about approximately ten thousand Android apps from Google Play. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/lava18/google-play-store-apps).
@@ -33,9 +33,9 @@ A data set containing data about approximately seven thousand iOS apps from the 
 ## Output
 ### Most common genre
 #### On App Store
-We can see that among the free English apps, more than a half (58.14%) are games. Entertainment apps are close to 8%, followed by photo and video apps, which are close to 5%. Only 3.66% of the apps are designed for education, followed by social networking apps which amount for 3.29% of the apps in our data set. 
+Among the free English apps, more than a half (58.14%) are games. Entertainment apps are close to 8%, followed by photo and video apps, which are close to 5%. Only 3.66% of the apps are designed for education, followed by social networking apps which amount for 3.29% of the apps in our data set. 
 
-The general impression is that App Store (at least the part containing free English apps) is dominated by apps that are designed for fun (games, entertainment, photo and video, social networking, sports, music, etc.), while apps with practical purposes (education, shopping, utilities, productivity, lifestyle, etc.) are more rare. 
+The general impression is that App Store is dominated by apps that are designed for fun (games, entertainment, photo and video, social networking, sports, music, etc.), while apps with practical purposes (education, shopping, utilities, productivity, lifestyle, etc.) are more rare. 
 
 <figure class="half">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_apple_common.png">
@@ -43,9 +43,8 @@ The general impression is that App Store (at least the part containing free Engl
   <figcaption>Top 10 and bottom 10 most common genres on Apple Store.</figcaption>
 </figure>
 
-
 #### On Google Play
-While the App Store is dominated by apps designed for fun, while Google Play shows a more balanced landscape of both practical and for-fun apps. On Google Play, there are not that many apps designed for fun, and it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.).
+While the App Store is dominated by apps designed for fun, Google Play shows a more balanced landscape of both practical and for-fun apps. On Google Play, it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.).
 
 <figure class="half">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_google_common.png">
@@ -68,6 +67,12 @@ On average, navigation apps have the highest number of user reviews (more than 8
 
 Our aim is to find popular genres, but navigation, social networking or music apps might seem more popular than they really are. The average number of ratings seem to be skewed by very few apps which have hundreds of thousands of user ratings, while the other apps may struggle to get past the 10,000 threshold. 
 
+<figure class="half">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_apple_popular.png">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_apple_popular.png">
+  <figcaption>Top 10 and bottom 10 most popular genres on Apple Store.</figcaption>
+</figure>
+
 Other genres that seem popular include weather, book, food and drink, or finance. The book genre seem to overlap a bit with the app idea we described above, but the other genres don't seem too interesting:
 
 - Weather apps — people generally don't spend too much time in-app, and the chances of making profit from in-app adds are low. Also, getting reliable live weather data may require us to connect our apps to non-free APIs.
@@ -75,12 +80,6 @@ Other genres that seem popular include weather, book, food and drink, or finance
 - Food and drink — examples here include Starbucks, Dunkin' Donuts, McDonald's, etc. So making a popular food and drink app requires actual cooking and a delivery service, which is outside the scope of our company.
 
 - Finance apps — these apps involve banking, paying bills, money transfer, etc. Building a finance app requires domain knowledge, and we don't want to hire a finance expert just to build an app.
-
-<figure class="half">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_apple_popular.png">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_apple_popular.png">
-  <figcaption>Top 10 and bottom 10 most popular genres on Apple Store.</figcaption>
-</figure>
 
 #### On Google Play
 On average, communication apps have the most installs: 71,452,385. This number is heavily skewed up by a few apps that have over one billion installs (WhatsApp, Facebook Messenger, Skype, Google Chrome, Gmail, and Hangouts), and a few others with over 100 and 500 million installs.
