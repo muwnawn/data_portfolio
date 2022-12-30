@@ -13,44 +13,45 @@ excerpt: "Data Analysis, Data Visualisation, Python"
 classes: wide
 mathjax: "true"
 ---
-## Description
+## DESCRIPTION
 This project's aim is to find mobile app profiles that are profitable for the App Store and Google Play markets. 
 
 This report helps developers understand what kinds of apps are likely to attract more users and make data-driven decisions to the kind of apps they would build. Note: only free English apps are analysed.
 
-**How** - There are 2 main steps which are described in "Detail steps" part below
-- Step 1: Data Cleaning (Deleting Wrong Data, Removing Duplicate Entries, Removing Inappropriate Records)
-- Step 2: Data Analysis (Find Most Common Apps by Genre, Most Popular Apps by Genre)
+**How** - There are 3 main steps which are described in "Detail steps" part below
 
-## Input
+## INPUT
 A data set containing data about approximately ten thousand Android apps from Google Play. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/lava18/google-play-store-apps).
 
 A data set containing data about approximately seven thousand iOS apps from the App Store. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps).
 
-## Detail steps
-[Google Colab link](https://colab.research.google.com/drive/1D5Cs3UDQY50va7-FgEzkN8pYuaPtCkO4?usp=sharing)
+## DETAIL STEPS
+I represent in 2 ways: the first one working with python dataframe and libraries, the second one using python lists and built-in functions.**
+Below are some main step without code, please click the [Google Colab link](https://colab.research.google.com/drive/1D5Cs3UDQY50va7-FgEzkN8pYuaPtCkO4?usp=sharing) to see full code and how it works. 
+- Step 0: Understanding the data (Open file, Initial Data Checks by finding colunm, row count, duplicate records and missing values)
+- Step 1: Data Cleaning (Delete Wrong Data, Removing Duplicate and Inappropriate Records)
+- Step 2: Data Analysis (Find Most Common Apps by Genre, Most Popular Apps by Genre)
+- Step 3: Data Visualization
 
-## Output
+## OUTPUT
 ### Most common genre
 #### On App Store
-Among the free English apps, more than a half (58.14%) are games. Entertainment apps are close to 8%, followed by photo and video apps, which are close to 5%. Only 3.66% of the apps are designed for education, followed by social networking apps which amount for 3.29% of the apps in our data set. 
-
 The general impression is that App Store is dominated by apps that are designed for fun (games, entertainment, photo and video, social networking, sports, music, etc.), while apps with practical purposes (education, shopping, utilities, productivity, lifestyle, etc.) are more rare. 
+- Among the free English apps, more than a half (58.14%) are games. Entertainment apps are close to 8%, followed by photo and video apps, which are close to 5%.
+- Only 3.66% of the apps are designed for education, followed by social networking apps which amount for 3.29% of the apps in our data set. 
 
-<figure class="half">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_apple_common.png">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_apple_common.png">
-  <figcaption>Top 10 and bottom 10 most common genres on Apple Store.</figcaption>
-</figure>
+<p>
+    <img src="https://drive.google.com/file/d/156VtRfpw913jcXhmNRrc00OK6gfBHwMu/view?usp=share_link" alt>
+    <em>Top 5 and bottom 5 most common genres on Apple Store.</em>
+</p>
 
 #### On Google Play
 While the App Store is dominated by apps designed for fun, Google Play shows a more balanced landscape of both practical and for-fun apps. On Google Play, it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.).
 
-<figure class="half">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_google_common.png">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_google_common.png">
-  <figcaption>Top 10 and bottom 10  most common genres on Google Play Store.</figcaption>
-</figure>
+<p>
+    <img src="https://drive.google.com/file/d/1-3PgrEbdGN3hQk49YVMRFDUBfLtgjA6W/view?usp=share_link" alt>
+    <em>Top 5 and bottom 5 most common genres on Google Play Store.</em>
+</p>
 
 However, if we investigate this further, we can see that the family category (which accounts for almost 18% of the apps) means mostly games for kids.
 
@@ -67,11 +68,10 @@ On average, navigation apps have the highest number of user reviews (more than 8
 
 Our aim is to find popular genres, but navigation, social networking or music apps might seem more popular than they really are. The average number of ratings seem to be skewed by very few apps which have hundreds of thousands of user ratings, while the other apps may struggle to get past the 10,000 threshold. 
 
-<figure class="half">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_apple_popular.png">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_apple_popular.png">
-  <figcaption>Top 10 and bottom 10 most popular genres on Apple Store.</figcaption>
-</figure>
+<p>
+    <img src="https://drive.google.com/file/d/1-23rgpJK2dnVFBDxk4uliOq0wKXpRqFr/view?usp=sharing" alt>
+    <em>Top 5 and bottom 5 most popular genres on Apple Store.</em>
+</p>
 
 Other genres that seem popular include weather, book, food and drink, or finance. The book genre seem to overlap a bit with the app idea we described above, but the other genres don't seem too interesting:
 
@@ -90,11 +90,10 @@ Again, the main concern is that these app genres might seem more popular than th
 
 The game genre seems pretty popular, but previously we found out this part of the market seems a bit saturated, so we'd like to come up with a different app recommendation if possible.
 
-<figure class="half">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_google_popular.png">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/bottom10_google_popular.png">
-  <figcaption>Top 10 and bottom 10 most popular genres on Apple Store.</figcaption>
-</figure>
+<p>
+    <img src="https://drive.google.com/file/d/1-2jaIzPC5Y4eRJ5x13hFUmyTBI8_tyaW/view?usp=sharing" alt>
+    <em>Top 5 and bottom 5 most popular genres on Google Play Store.</em>
+</p>
 
 ### Conclusions
 In this project, we analyzed data about the App Store and Google Play mobile apps with the goal of recommending an app profile that can be profitable for both markets.
