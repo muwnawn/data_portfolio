@@ -42,6 +42,7 @@ The general impression is that App Store is dominated by apps that are designed 
 
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=156VtRfpw913jcXhmNRrc00OK6gfBHwMu">
+    <br>
     <em>Top 5 and bottom 5 most common genres on Apple Store.</em>
 </p>
 
@@ -50,13 +51,15 @@ While the App Store is dominated by apps designed for fun, Google Play shows a m
 
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1-3PgrEbdGN3hQk49YVMRFDUBfLtgjA6W">
+    <br>
     <em>Top 5 and bottom 5 most common genres on Google Play Store.</em>
 </p>
 
-However, if we investigate this further, we can see that mostly apps in the family category (which accounts for almost 18% of the apps) are made wwith entertainment  purpose.
+However, if we investigate this further, we can see that mostly apps in the family category (which accounts for almost 18% of the apps) are made with entertainment  purpose.
 
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1HyS0GysD54p6OUAEzYcJJ9qs9Z0OvIBl">
+    <br>
     <em>Most common categories of "Family" genre on Google Play Store.</em>
 </p>
 
@@ -68,8 +71,9 @@ On average, navigation apps have the highest number of user reviews (more than 8
 
 Our aim is to find popular genres, but navigation, social networking or music apps might seem more popular than they really are. The average number of ratings seem to be skewed by very few apps which have hundreds of thousands of user ratings, while the other apps may struggle to get past the 10,000 threshold. 
 
-<p>
+<p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1-23rgpJK2dnVFBDxk4uliOq0wKXpRqFr">
+    <br>
     <em>Top 5 and bottom 5 most popular genres on Apple Store.</em>
 </p>
 
@@ -90,8 +94,9 @@ Again, the main concern is that these app genres might seem more popular than th
 
 The game genre seems pretty popular, but previously we found out this part of the market seems a bit saturated, so we'd like to come up with a different app recommendation if possible.
 
-<p>
+<p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1-2jaIzPC5Y4eRJ5x13hFUmyTBI8_tyaW">
+    <br>
     <em>Top 5 and bottom 5 most popular genres on Google Play Store.</em>
 </p>
 
