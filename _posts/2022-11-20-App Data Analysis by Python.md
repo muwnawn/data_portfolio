@@ -41,7 +41,7 @@ The general impression is that App Store is dominated by apps that are designed 
 - Only 3.66% of the apps are designed for education, followed by social networking apps which amount for 3.29% of the apps in our data set. 
 
 <p>
-    <img src="https://drive.google.com/file/d/156VtRfpw913jcXhmNRrc00OK6gfBHwMu/view?usp=share_link" alt>
+    <img src="https://drive.google.com/file/d/156VtRfpw913jcXhmNRrc00OK6gfBHwMu/view?usp=share_link">
     <em>Top 5 and bottom 5 most common genres on Apple Store.</em>
 </p>
 
@@ -49,7 +49,7 @@ The general impression is that App Store is dominated by apps that are designed 
 While the App Store is dominated by apps designed for fun, Google Play shows a more balanced landscape of both practical and for-fun apps. On Google Play, it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.).
 
 <p>
-    <img src="https://drive.google.com/file/d/1-3PgrEbdGN3hQk49YVMRFDUBfLtgjA6W/view?usp=share_link" alt>
+    <img src="https://drive.google.com/file/d/1-3PgrEbdGN3hQk49YVMRFDUBfLtgjA6W/view?usp=share_link">
     <em>Top 5 and bottom 5 most common genres on Google Play Store.</em>
 </p>
 
@@ -69,7 +69,7 @@ On average, navigation apps have the highest number of user reviews (more than 8
 Our aim is to find popular genres, but navigation, social networking or music apps might seem more popular than they really are. The average number of ratings seem to be skewed by very few apps which have hundreds of thousands of user ratings, while the other apps may struggle to get past the 10,000 threshold. 
 
 <p>
-    <img src="https://drive.google.com/file/d/1-23rgpJK2dnVFBDxk4uliOq0wKXpRqFr/view?usp=sharing" alt>
+    <img src="https://drive.google.com/file/d/1-23rgpJK2dnVFBDxk4uliOq0wKXpRqFr/view?usp=sharing">
     <em>Top 5 and bottom 5 most popular genres on Apple Store.</em>
 </p>
 
@@ -91,7 +91,7 @@ Again, the main concern is that these app genres might seem more popular than th
 The game genre seems pretty popular, but previously we found out this part of the market seems a bit saturated, so we'd like to come up with a different app recommendation if possible.
 
 <p>
-    <img src="https://drive.google.com/file/d/1-2jaIzPC5Y4eRJ5x13hFUmyTBI8_tyaW/view?usp=sharing" alt>
+    <img src="https://drive.google.com/file/d/1-2jaIzPC5Y4eRJ5x13hFUmyTBI8_tyaW/view?usp=sharing">
     <em>Top 5 and bottom 5 most popular genres on Google Play Store.</em>
 </p>
 
