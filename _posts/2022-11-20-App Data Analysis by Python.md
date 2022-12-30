@@ -40,7 +40,7 @@ The general impression is that App Store is dominated by apps that are designed 
 - Among the free English apps, more than a half (58.14%) are games. Entertainment apps are close to 8%, followed by photo and video apps, which are close to 5%.
 - Only 3.66% of the apps are designed for education, followed by social networking apps which amount for 3.29% of the apps in our data set. 
 
-<p>
+<p align="center">
     <img src="https://drive.google.com/uc?export=view&id=156VtRfpw913jcXhmNRrc00OK6gfBHwMu">
     <em>Top 5 and bottom 5 most common genres on Apple Store.</em>
 </p>
@@ -48,20 +48,20 @@ The general impression is that App Store is dominated by apps that are designed 
 #### On Google Play
 While the App Store is dominated by apps designed for fun, Google Play shows a more balanced landscape of both practical and for-fun apps. On Google Play, it seems that a good number of apps are designed for practical purposes (family, tools, business, lifestyle, productivity, etc.).
 
-<p>
+<p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1-3PgrEbdGN3hQk49YVMRFDUBfLtgjA6W">
     <em>Top 5 and bottom 5 most common genres on Google Play Store.</em>
 </p>
 
-However, if we investigate this further, we can see that the family category (which accounts for almost 18% of the apps) means mostly games for kids.
+However, if we investigate this further, we can see that mostly apps in the family category (which accounts for almost 18% of the apps) are made wwith entertainment  purpose.
 
-<figure class="half">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/appdata/top10_google_common_family.png">
-  <figcaption>Top 10 most common categories of "Family" genre on Google Play Store.</figcaption>
-</figure>
+<p align="center">
+    <img src="https://drive.google.com/uc?export=view&id=1HyS0GysD54p6OUAEzYcJJ9qs9Z0OvIBl">
+    <em>Most common categories of "Family" genre on Google Play Store.</em>
+</p>
 
 ### Most popular genre
-Now we'd like to get an idea about the kind of apps that have most users. 
+So, we found that most common apps in both store are for entertainment. Now we'd like to get an idea about the kind of apps that have most users. 
 
 #### On App Store
 On average, navigation apps have the highest number of user reviews (more than 86090 user reviews), but this figure is heavily influenced by Waze and Google Maps, which have close to half a million user reviews together. The same pattern applies to social networking apps, where the average number is heavily influenced by a few giants like Facebook, Pinterest, Skype, etc. Same applies to music apps, where a few big players like Pandora, Spotify, and Shazam heavily influence the average number.
