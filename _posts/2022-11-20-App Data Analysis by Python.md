@@ -79,20 +79,18 @@ Navigation, social networking or music apps might seem more popular than they re
 The average number of ratings seem to be skewed by very few apps which have hundreds of thousands of user ratings, while the other apps may struggle to get past the 10,000 threshold. 
 
 <p align="center">
-    <img src="https://drive.google.com/uc?export=view&id=1NnHa6jrzLFZ-_GfFUzuQeHbaCMNkswUx">
+    <img src="https://drive.google.com/uc?export=view&id=1---pHKPyejHKcfWrp2DNMiVCWDo5G8Mb">
     <br>
     <em>Distribution of app users on Apple Store.</em>
 </p>
 
-<!-- After remove outliner -->
+After removing apps that have more than 10,000 reviews, most popular genres on Apple Store are News, Catalogs and Medical.
 
-<!-- Other genres that seem popular include weather, book, food and drink, or finance. The book genre seem to overlap a bit with the app idea we described above, but the other genres don't seem too interesting:
-
-- Weather apps — people generally don't spend too much time in-app, and the chances of making profit from in-app adds are low. Also, getting reliable live weather data may require us to connect our apps to non-free APIs.
-
-- Food and drink — examples here include Starbucks, Dunkin' Donuts, McDonald's, etc. So making a popular food and drink app requires actual cooking and a delivery service, which is outside the scope of our company.
-
-- Finance apps — these apps involve banking, paying bills, money transfer, etc. Building a finance app requires domain knowledge, and we don't want to hire a finance expert just to build an app. -->
+<p align="center">
+    <img src="https://drive.google.com/uc?export=view&id=1-0qRkalA0QtwqT2bMJZK0fxVeOQizHvB">
+    <br>
+    <em>Top 10 most popular genres on Apple Store (below 10 thousands reviews).</em>
+</p>
 
 #### On Google Play
 On Google Play Store, communication, social and video players has most installs but again, the main concern is that these app genres might seem more popular than they really are. Moreover, these niches seem to be dominated by a few giants who are hard to compete against.
@@ -106,7 +104,29 @@ On Google Play Store, communication, social and video players has most installs 
     <em>Top 5 and bottom 5 most popular genres on Google Play Store.</em>
 </p>
 
-The game genre seems pretty popular, but previously we found out this part of the market seems a bit saturated, so we'd like to come up with a different app recommendation if possible.
+The average number of ratings seem to be skewed by very few apps which have milions of user installs, while the other apps may struggle to get past the 10,000,000 threshold. 
+
+<p align="center">
+    <img src="https://drive.google.com/uc?export=view&id=1-72rXpjraD1Hz3aZ6GJ1z2O0roAonrKW">
+    <br>
+    <em>Distribution of app users on Google Play Store.</em>
+</p>
+
+After removing apps that have more than 10,000,000 installs, most popular genres on Google Play Store are Entertainment, Education and Games. The game genre seems pretty popular, but previously we found out this part of the market seems a bit saturated (most common genre), so we'd like to come up with a different app recommendation if possible.
+
+<p align="center">
+    <img src="https://drive.google.com/uc?export=view&id=1-FXc77A3wBIA9mmKoJyg7laB8qEUw1_t">
+    <br>
+    <em>Top 10 most popular genres on Google Play Store (below 10 milions installs).</em>
+</p>
+
+Other genres that seem popular include weather, book, food and drink, or finance. The book genre seem to overlap a bit with the app idea we described above, but the other genres don't seem too interesting:
+
+- Weather apps — people generally don't spend too much time in-app, and the chances of making profit from in-app adds are low. Also, getting reliable live weather data may require us to connect our apps to non-free APIs.
+
+- Food and drink — examples here include Starbucks, Dunkin' Donuts, McDonald's, etc. So making a popular food and drink app requires actual cooking and a delivery service, which is outside the scope of our company.
+
+- Finance apps — these apps involve banking, paying bills, money transfer, etc. Building a finance app requires domain knowledge, and we don't want to hire a finance expert just to build an app.
 
 ### Conclusions
 In this project, we analyzed data about the App Store and Google Play mobile apps with the goal of recommending an app profile that can be profitable for both markets.
