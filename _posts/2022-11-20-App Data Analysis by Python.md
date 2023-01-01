@@ -36,7 +36,7 @@ Below are some main step without code, please click the [Google Colab link](http
 ## OUTPUT
 ### Most common genre
 #### On App Store
-The general impression is that **App Store is dominated by apps that are designed for fun** (mostly games - 58.14%, entertainment - 8%, photo and video - 5%, etc.), while apps with practical purposes (education	- 3.6%, others < 3% each) are more rare. 
+The general impression is that **App Store is dominated by apps that are designed for fun** (mostly games - 58.14%, entertainment - 8%, photo and video - 5%, etc.), **while apps with practical purposes** (education	- 3.6%, others < 3% each) **are more rare**. 
 
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=156VtRfpw913jcXhmNRrc00OK6gfBHwMu">
@@ -45,7 +45,7 @@ The general impression is that **App Store is dominated by apps that are designe
 </p>
 
 #### On Google Play
-While the App Store is dominated by apps designed for fun, **Google Play shows a more balanced landscape of both practical and for-fun apps**. On Google Play, it seems that a good number of apps are designed for practical purposes (family, tools, business, productivity, etc.).
+While the App Store is dominated by apps designed for fun, **Google Play shows a more balanced landscape of both practical** (family - 18.3%) **and for-fun apps** (game - 10.8%).
 
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1-3PgrEbdGN3hQk49YVMRFDUBfLtgjA6W">
@@ -53,7 +53,7 @@ While the App Store is dominated by apps designed for fun, **Google Play shows a
     <em>Top 5 and bottom 5 most common genres on Google Play Store.</em>
 </p>
 
-However, if we investigate this further, we can see that mostly apps in the family category (which accounts for almost 18% of the apps) are made with entertainment  purpose.
+It seems that a good number of apps are designed for practical purposes (family, tools, business, productivity, etc.). However, if we investigate this further, we can see that mostly apps in the family category are made with entertainment purpose (57.7&) and education purpose (27.5%).
 
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1HyS0GysD54p6OUAEzYcJJ9qs9Z0OvIBl">
@@ -61,8 +61,10 @@ However, if we investigate this further, we can see that mostly apps in the fami
     <em>Most common categories of "Family" genre on Google Play Store.</em>
 </p>
 
+So, we found that **most common apps in both platforms are for entertainment**.
+
 ### Most popular genre
-So, we found that most common apps in both store are for entertainment. Now we'd like to get an idea about the kind of apps that have most users. 
+Now we'd like to get an idea about the kind of apps that have most users. 
 
 #### On App Store
 
@@ -103,13 +105,9 @@ After removing apps that have more than 10,000 reviews, we can see some new genr
     <em>Top 10 most popular genres on Apple Store (below 10 thousands reviews).</em>
 </p>
 
-**To temperarily conclude, protential genre on Apple Store are Finance, Shopping and Productivity apps.**
+To temperarily conclude, **protential genres on Apple Store are Finance, Shopping and Productivity apps.**
 
 #### On Google Play
-On Google Play Store, communication, social and video players has most installs but again, the main concern is that these app genres might seem more popular than they really are. Moreover, these niches seem to be dominated by a few giants who are hard to compete against.
-- On average, communication apps have the most installs: 71,452,385. This number is heavily skewed up by a few apps that have over one billion installs (WhatsApp, Facebook Messenger, Skype, Google Chrome, Gmail, and Hangouts), and a few others with over 100 and 500 million installs.
-- We see the same pattern for the social category, which is the runner-up with 45,176,396 installs. The market is dominated by apps like Facebook, Instagram, Google+, etc.. 
-- The pattern is repeated for video players apps (where we have giants like Youtube, Google Play Movies & TV, or MX Player), photography apps (Google Photos and other popular photo editors), or productivity apps (Microsoft Word, Dropbox, Google Calendar, Evernote, etc.).
 
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1-2jaIzPC5Y4eRJ5x13hFUmyTBI8_tyaW">
@@ -117,7 +115,15 @@ On Google Play Store, communication, social and video players has most installs 
     <em>Top 10 most popular genres on Google Play Store.</em>
 </p>
 
-The average number of ratings seem to be skewed by very few apps which have milions of user installs, while the other apps may struggle to get past the 10,000,000 threshold. 
+On Google Play Store, communication, social and video players has most installs but again, the main concern is that these app genres might seem more popular than they really are. Moreover, these niches seem to be dominated by a few giants who are hard to compete against.
+- On average, communication apps have the most installs: 71,452,385. This number is heavily skewed up by a few apps that have over one billion installs (WhatsApp, Facebook Messenger, Skype, Google Chrome, Gmail, and Hangouts), and a few others with over 100 and 500 million installs.
+- We see the same pattern for the social category, which is the runner-up with 45,176,396 installs. The market is dominated by apps like Facebook, Instagram, Google+, etc.. 
+- The pattern is repeated for 
+  - video players apps (where we have giants like Youtube, Google Play Movies & TV, or MX Player)
+  - photography apps (Google Photos and other popular photo editors)
+  - productivity apps (Microsoft Word, Dropbox, Google Calendar, Evernote, etc.).
+
+The average number of ratings seem to be skewed by very few apps which have milions of user installs, while the other apps may struggle to get past the billion (1,000,000,000 or 10^9) threshold. 
 
 <p align="center">
     <img src="https://drive.google.com/uc?export=view&id=1-72rXpjraD1Hz3aZ6GJ1z2O0roAonrKW">
@@ -125,7 +131,7 @@ The average number of ratings seem to be skewed by very few apps which have mili
     <em>Distribution of app users on Google Play Store.</em>
 </p>
 
-After removing apps that have more than 10,000,000 installs, most popular genres on Google Play Store are Entertainment, Education and Games.
+After removing apps that have more than one billion installs, most popular genres on Google Play Store are Entertainment, Education and Games.
 - The game or entertainment genre seems pretty popular, but previously we found out this part of the market seems a bit saturated (most common genre), so we'd like to come up with a different app recommendation if possible.
 
 <p align="center">
