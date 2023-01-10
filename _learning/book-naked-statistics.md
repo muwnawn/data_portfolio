@@ -1,7 +1,7 @@
 ---
 title: "Sách Naked Statistics"
 date: 2023-01-07
-<!-- last_modified_at: 2022-12-26T11:59:26-04:00 -->
+last_modified_at: 2023-01-10T11:59:26-04:00
 author_profile: true
 header:
   image: "/images/STATS.jpg"
@@ -32,8 +32,32 @@ Hoy, giờ thì đọc sách cùng tớ nhé!
 ## 2. KIẾN THỨC TRỌNG TÂM
 Đầu tiên thì, rất khuyến khích đọc sách đầy đủ, từ đầu đầu đến cuối (và tớ sẽ làm thế, kiến thức mà, không vội được :) nhưng dưới đây tớ sẽ lược bớt và chỉ ghi lại những kiến thức quan trọng của thống kế thui. Vì tớ muốn giữ bài viết này ngắn nhất có thể, như một chiếc note cho bản thân tớ về sau xem lại hoặc cho ai đó muốn (tạm) nắm các khái niệm về thống kê nha.
 
-### 2.1. Thống kê (Statistics)
-"It’s a nice tool for making a quick comparison"
+### 2.1. Tổng quan về Thống kê (Statistics)
+"It’s a nice tool for making a quick comparison and bring meaning to raw data"
+
+#### Thống kê mô tả (Descriptive Statistics)
+- Thống kê mô tả giúp dẽ dàng tính toán một tập dữ liệu, dễ hiểu và dễ so sánh. Một ví dụ về Thống kê mô tả là GPA, chỉ số thể hiện kết quả học tập toàn khoá của sinh viên, được tính bằng cách lấy trung bình điểm của tất cả các môn trong khoá.
+- Tuy nhiên, Thống kê mô tả không phản ánh đầy đủ các yếu tố đằng sau dữ liệu. Ví dụ, những sinh viên học những môn khó hơn có thể có GPA thấp hơn nhứng sinh vieen học môn dễ hơn.
+
+#### Thống kê suy luận (Descriptive Inference)
+- Thống kê suy luận là dùng những dữ liện đã biết (bằng cách lấy mẫu - sampling) để suy luận về những dữ liệu chưa biết. Ví dụ khảo sát bầu cử, thi thử,... để từ đó suy luận được kết quá bầu cử hay trình độ sinh viên của năm đó.
+
+#### Rủi ro và các sự kiện liên quan đến xác suất khác
+- Rủi ro là 1 sự kiện liên quan đến xác suất. Ví dụ về gambling, đánh bài hay cá cược, tận dụng xác suất là luôn có rủi ro bị thua bài, mất cược tuy nhiên sau mỗi lần xảy ra thì xác suất thua giảm đi và xác suất thắng tăng lên.
+
+<!-- #### Suy đoán các mối liên hệ đằng sau dữ liệu
+- 
+
+#### Suy đoán các mối liên hệ đằng sau các biến dữ liệu
+- 
+
+#### Suy đoán các mối liên hệ đằng sau các biến dữ liệu -->
+
+
+
+
+
+
 
 <!-- ### 2.2. Thống kê mô tả (Descriptive Statistics) -->
 
