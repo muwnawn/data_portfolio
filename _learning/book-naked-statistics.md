@@ -10,7 +10,7 @@ excerpt: ""
 classes: wide
 toc: true
 toc_icon: "heart"
-published: true
+published: false
 ---
 
 ## 1. MÔ TẢ
@@ -36,7 +36,7 @@ Hoy, giờ thì đọc sách cùng tớ nhé!
 "It’s a nice tool for making a quick comparison and bring meaning to raw data"
 
 #### Thống kê mô tả (Descriptive Statistics)
-- Thống kê mô tả giúp dẽ dàng tính toán một tập dữ liệu, dễ hiểu và dễ so sánh. Một ví dụ về Thống kê mô tả là GPA, chỉ số thể hiện kết quả học tập toàn khoá của sinh viên, được tính bằng cách lấy trung bình điểm của tất cả các môn trong khoá.
+- Thống kê mô tả giúp dễ dàng tính toán một tập dữ liệu, dễ hiểu và dễ so sánh. Một ví dụ về Thống kê mô tả là GPA, chỉ số thể hiện kết quả học tập toàn khoá của sinh viên, được tính bằng cách lấy trung bình điểm của tất cả các môn trong khoá.
 - Tuy nhiên, Thống kê mô tả không phản ánh đầy đủ các yếu tố đằng sau dữ liệu. Ví dụ, những sinh viên học những môn khó hơn có thể có GPA thấp hơn nhứng sinh vieen học môn dễ hơn.
 
 #### Thống kê suy luận (Descriptive Inference)
@@ -45,21 +45,43 @@ Hoy, giờ thì đọc sách cùng tớ nhé!
 #### Rủi ro và các sự kiện liên quan đến xác suất khác
 - Rủi ro là 1 sự kiện liên quan đến xác suất. Ví dụ về gambling, đánh bài hay cá cược, tận dụng xác suất là luôn có rủi ro bị thua bài, mất cược tuy nhiên sau mỗi lần xảy ra thì xác suất thua giảm đi và xác suất thắng tăng lên.
 
-<!-- #### Suy đoán các mối liên hệ đằng sau dữ liệu
-- 
+#### Suy đoán các mối liên hệ đằng sau dữ liệu (**re-read**)
+- Quay lại câu hỏi phỏng vấn của tớ ở đầu bài viết. Tỷ lệ người chết vì ung thư vú của nhóm được khám thấp hơn nhóm không được khám thì có kết luận được rằng việc khám giúp giảm tỷ lệ tử vong không? Không, vì nhóm được khám có thể mang những đặc điểm không liên quan đến việc khám bệnh, ví dụ như nhóm này vốn đã quan tâm đến sức khoẻ nên có thể không cần khám ung thư vú thì nhóm này vốn đã có tỷ lệ tử vong thấp hơn rùi. Vì vậy, ngoài tử vong về ung thư vú cần xét thêm cả tỷ lệ tủ vong vì các bệnh khác nữa. 
+- Nhưng làm sao để biết được những mối liên hệ này? DA cần có business sense để phán đoán và dùng statistics là công cụ hỗ trợ để đưa ra kết luận có ý nghĩa nè.
 
-#### Suy đoán các mối liên hệ đằng sau các biến dữ liệu
-- 
+#### Hạn chế của thống kê
+- Về cách định nghĩa: Thống kê có thể chỉ ra cầu thủ tốt nhất, tuy nhiên không có định nghĩa thống nhất về sự tốt nhất này. Dẫn đến kết quả thống kê có thể không được công nhận.
+- Về dữ liệu: Dữ liệu có thể bị hạn chế dựa trên phương thức thu thập và độ lớn của mẫu (do hạn chế về tài chính, để thu được dữ liệu như ý muốn có thể đắt đỏ)
 
-#### Suy đoán các mối liên hệ đằng sau các biến dữ liệu -->
+### 2.2. Thống kê mô tả (Descriptive Statistics)
+- mean: giá trị trung bình của tập dữ liệu. 
+  - Ví dụ, một nhóm 5 người có thu nhập 10 triệu/ tháng có thu nhập trung bình là 10 triệu/ tháng.
+- outlier: giá trị ngoại lai có thể khiến mean mất ý nghĩa. 
+  - Ví dụ, nhóm nạp thêm 1 thành viên có thu nhập 100 triệu/ tháng dẫn đến thu nhập trung bình là 25 triệu/tháng. Nếu chỉ xét giá trị mean có thể bị kết luận rằng nhóm này bao gồm những người có thu nhập trung bình-cao, tuy nhiên thực chất bao gồm những người có thu nhập trung bình-thấp và chỉ duy nhất 1 người thu nhập cao đột biến.
+- median: giá trị trung vị, số nằm ở giữa trong một danh sách các số được sắp xếp theo thứ tự. Với tập dữ liệu có outliers, median được sử dụng thay mean. 
+  - Ví dụ, median của nhóm trước và sau khi thêm thành viên vẫn là 10 triệu/ tháng.
+- frequency distrubution (theo %)
+- quartiles, percentiles: phân vị, tương tự như median nhưng thay vì chia đôi thì chia 4 hoặc 100 điểm của tập dữ liệu, giúp 1 giá trị trở nên có ý nghĩa hơn trong tập dữ liệu. 
+  - Ví dụ, sinh viên thi đại học đạt điểm 8/10, giá trị khi đứng 1 mình không mang nhiều ý nghĩa, không biết sinh viên này có đỗ đại học hay không. Nếu biết thêm 8 là phân vị 90 (90th percentiles) , tức là sinh viên này có điểm cao hơn 90% số sinh viên còn lại, thì khả năng đỗ đại học cao. Ngược lại nếu đề thi năm đó dễ, 8 chỉ là phân vị 40 thì khả năng đỗ của sinh viên này không cao.
+- standard deviation: độ lệch chuẩn, đo _độ phân tán_ của dữ liệu so với giá trị trung bình mean. 
+  - Ví dụ, 2 nhóm cùng thu nhập trung bình 25 triệu/ tháng có thể là 1 nhóm gồm 6 người cùng thu nhập hoặc 1 nhóm khác có rải thu nhập từ 1 triệu, 5, 10, 24, 50 đến 60 triệu/ tháng. Nhóm thứ 2 có độ lệch chuẩn lớn hơn nhóm 1.
+  - Một ứng dụng khác của độ lệch chuẩn trong y tế. Ví dụ, một người đi khám có nồng độ oxy trong máu là 93%, thấp hơn nồng độ trung bình là 95% khiến người đó có thể hiểu rằng mình đang có vấn đề về sức khoẻ. Tuy nhiên, giá trị trung bình này được tính từ một tập giá trị cao hoặc thấp hơn 95% và độ lệch chuẩn của giá trị trung bình này là 5%, tức giá trị 93% của người này là giá trị thông thường, không có nguy hiểm.
+- variance: phương sai, có ý nghĩa tương tự độ lệch chuẩn và có giá trị là căn bậc hai của độ lệch chuẩn.
+- normal distribution: 
+
+
+
+
+
+### 2.3. Sự mô tả đánh lừa (Deceptive Description)
+### 2.4.
+### 2.5.
 
 
 
 
 
 
-
-<!-- ### 2.2. Thống kê mô tả (Descriptive Statistics) -->
 
 (còn tiếp)
 
