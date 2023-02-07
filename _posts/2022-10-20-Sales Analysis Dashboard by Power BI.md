@@ -23,7 +23,9 @@ mathjax: "true"
 **How** - This Dashboard was created by Power BI after data-cleansing step in Power Query. 
 
 ## Input
-[Link Dataraw](https://github.com/muwnawn/home/blob/master/assets/Portfolio_Sales%20and%20Finance%20Analysis/Sales%20and%20Finance%20Data%20Raw.xlsm)
+[Link Dataraw](https://github.com/muwnawn/home/tree/master/assets/Portfolio_Sales%20and%20Finance%20Analysis/Sales%20Data)
+
+This data folder has files of sales records from 2014 to 2017. Each file has 2 sheets of sales orders and returned orders.
 
 ## Output
 [Link Dashborad](https://github.com/muwnawn/home/blob/master/assets/Portfolio_Sales%20and%20Finance%20Analysis/Sales%20Analysis%20Dashboard.pbix)
