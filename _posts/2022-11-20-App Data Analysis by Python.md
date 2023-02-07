@@ -18,22 +18,21 @@ This project's aim is to find mobile app profiles that are profitable for the Ap
 
 This report helps developers understand what kinds of apps are likely to attract more users and make data-driven decisions to the kind of apps they would build. Note: only free English apps are analysed.
 
-**How** - There are 3 main steps which are described in "Detail steps" part below
-
 ## INPUT
 A data set containing data about approximately ten thousand Android apps from Google Play. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/lava18/google-play-store-apps).
 
 A data set containing data about approximately seven thousand iOS apps from the App Store. You can find more details and download the data set from this [kaggle link](https://www.kaggle.com/datasets/ramamet4/app-store-apple-data-set-10k-apps).
 
 ## DETAIL STEPS
-I represent in 2 ways: the first one working with python dataframe and libraries, the second one using python lists and built-in functions.**
-Below are some main step without code, please click the [Google Colab link](https://colab.research.google.com/drive/1D5Cs3UDQY50va7-FgEzkN8pYuaPtCkO4?usp=sharing) to see full code and how it works. 
+I represent in 2 ways: the first one working with python dataframe and libraries, the second one using python lists and built-in functions.
+
+Below are some main step, **please click the [Google Colab link](https://colab.research.google.com/drive/1D5Cs3UDQY50va7-FgEzkN8pYuaPtCkO4?usp=sharing) to see full code and how it works**. 
 - Step 0: Understanding the data (Open file, Initial Data Checks by finding colunm, row count, duplicate records and missing values)
 - Step 1: Data Cleaning (Delete Wrong Data, Removing Duplicate and Inappropriate Records)
 - Step 2: Data Analysis (Find Most Common Apps by Genre, Most Popular Apps by Genre)
 - Step 3: Data Visualization
 
-## OUTPUT
+## OUTPUT/FINDINGS
 ### Most common genre
 #### On App Store
 The general impression is that **App Store is dominated by apps that are designed for fun** (mostly games - 58.14%, entertainment - 8%, photo and video - 5%, etc.), **while apps with practical purposes** (education	- 3.6%, others < 3% each) **are more rare**. 
