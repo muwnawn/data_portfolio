@@ -32,12 +32,16 @@ This notebook is organized into the following sections:
 If the company want to assume that the old page is better, hypothesis test need to be performed with:
 - Null hypotheses (H0): pold >= pnew
 - Alternative hypotheses (H1): pold < pnew
+
 with pold and pnew, which are the "converted" probability (or rate) for the old and new pages respectively.
+
 By comparing p-value to type I error threshold (α = 0.05), decision about which hypothesis is true or there is a difference between the new and old pages or not can be made. The p-value = 0.09 > 0.05 (type I error rate), the null hypothesis is failed to reject.
 
 #### Part III: Regression approach
 Since each row in the dataset is either a conversion or no conversion, logistic regression is used to predict the probability of the occurrence of a binary event based on one or more predictor variables.
+
 The p-value of ab_page is 0.1897 > 0.05 differing from p-value found in Part II (0.09) due to the type of test (part III is a two-sided and Part II is a one-sided)
+
 However, this p-value is still larger then Type I error rate (0.19 > 0.05) which means the null hypothesis is also failed to reject.
 
 **The company should keep the old page.**
